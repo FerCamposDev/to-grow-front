@@ -180,7 +180,7 @@
 }
 
 .carousel-control-prev {
-    width: 90px;
+    width: 60px;
     height: 60px;
     position: absolute;
     top: 50%;
@@ -196,7 +196,7 @@
 }
 
 .carousel-control-next {
-    width: 90px;
+    width: 60px;
     height: 60px;
     position: absolute;
     top: 50%;
@@ -246,12 +246,11 @@
 }
 
 #carouselId .carousel-indicators li {
-    width: 30px;
-    height: 10px;
+    width: 40px;
     background: var(--bs-primary);
     margin: 10px;
     border-radius: 30px;
-    opacity: 1;
+    box-sizing: border-box;
 }
 
 #carouselId .carousel-indicators li:hover {
