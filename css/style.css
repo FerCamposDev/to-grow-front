@@ -634,6 +634,7 @@
 
 .contact-map {
     background: #26d48c;
+    min-height: 300px;
 }
 
 .contact-form {
