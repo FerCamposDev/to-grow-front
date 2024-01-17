@@ -587,6 +587,11 @@
     height: 450px;
 }
 
+.testimonial-avatar > img {
+    height: 100px;
+    width: 100px;
+}
+
 .testimonial-carousel .owl-dots {
     margin-top: 15px;
     display: flex;
