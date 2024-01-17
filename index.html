@@ -807,22 +807,31 @@
 						</div>
 					</div>
 					<div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-						<div class="p-2 p-lg-5 rounded contact-form">
-							<div class="mb-4">
-								<input type="text" class="form-control border-0 py-3" placeholder="Your Name">
-							</div>
-							<div class="mb-4">
-								<input type="email" class="form-control border-0 py-3" placeholder="Your Email">
-							</div>
-							<div class="mb-4">
-								<input type="text" class="form-control border-0 py-3" placeholder="Project">
-							</div>
-							<div class="mb-4">
-								<textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
-							</div>
+						<form id="contact-form" class="p-2 p-lg-5 rounded contact-form" method="post" action="https://formspree.io/f/mleqdozv">
+							<label class="mb-4 w-100">
+								<input required type="text" class="form-control border-0 py-3" placeholder="Your Name" name="name">
+							</label>
+							<label class="mb-4 w-100">
+								<input required type="email" class="form-control border-0 py-3" placeholder="Your Email" name="email">
+							</label>
+							<label class="mb-4 w-100">
+								<input type="text" class="form-control border-0 py-3" placeholder="Project" name="project">
+							</label>
+							<label class="mb-4 w-100 w-100">
+								<textarea required class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message" name="message"></textarea>
+							</label>
 							<div class="text-end">
-								<button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
+								<button class="btn bg-primary text-white py-3 px-5" type="submit">Send Message</button>
 							</div>
+						</form>
+						<div id="my-form-status" class="d-none contact-form rounded d-flex flex-column justify-content-center">
+							<h4 class="text-center">
+								Thank you for reaching out!
+							</h4>
+							<h6 class="text-center p-2 p-lg-5">
+								We're excited to receive your message, and our team will review it shortly.
+								We'll be in touch soon to discuss how we can assist you!
+							</h6>
 						</div>
 					</div>
 				</div>
@@ -917,6 +926,7 @@
 
 	<!-- Template Javascript -->
 	<script src="js/main.js"></script>
+	<script src="js/form.js"></script>
 </body>
 
 </html>
