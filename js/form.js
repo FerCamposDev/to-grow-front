@@ -5,6 +5,7 @@ var form = document.getElementById("contact-form");
 async function handleSubmit(event) {
   event.preventDefault();
   var status = document.getElementById("my-form-status");
+  var errorStatus = document.getElementById("my-form-status-error");
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -13,21 +14,15 @@ async function handleSubmit(event) {
       'Accept': 'application/json'
     }
   }).then(response => {
+    form.classList.add('d-none');
     if (response.ok) {
-      form.classList.add('d-none');
       status.classList.remove('d-none');
       form.reset()
     } else {
-      response.json().then(data => {
-        if (Object.hasOwn(data, 'errors')) {
-          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-        } else {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        }
-      })
+      errorStatus.classList.remove('d-none');
     }
   }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
+    errorStatus.classList.remove('d-none');
   });
 }
 
