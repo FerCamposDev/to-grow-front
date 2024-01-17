@@ -109,6 +109,9 @@
 
 /*** Topbar End ***/
 
+.logo {
+    height: 50px;
+}
 
 /*** Navbar Start ***/
 .navbar .navbar-nav {
