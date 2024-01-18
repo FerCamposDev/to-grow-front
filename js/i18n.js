@@ -19,6 +19,7 @@ function updateContent() {
 }
 
 async function i18Loader() {
+  const initialLang = localStorage.getItem('lang') || 'en';
   const langs = ["en", "es"];
   const jsons = await Promise.all(
     langs.map((lang) => fetch("lang/" + lang + ".json").then((r) => r.json()))
@@ -30,13 +31,14 @@ async function i18Loader() {
   }, {});
 
   await i18next.init({
-    lng: "en",
+    lng: initialLang,
     // debug: true,
     resources: res
   });
   updateContent();
 
   i18next.on("languageChanged", (lang) => {
+    localStorage.setItem('lang', lang);
     updateContent();
   });
 
