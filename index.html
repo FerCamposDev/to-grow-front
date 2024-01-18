@@ -76,19 +76,21 @@
 					<h1 class="text-white fw-bold d-block p-0 m-0">To<span class="text-secondary">Grow</span> </h1>
 				</a>
 				<div class="d-flex">
+					<!-- Init lang flags mobile -->
 					<div class="d-flex d-lg-none dropdown mx-2">
-						<button class="btn" data-bs-toggle="dropdown" disabled="true" id="lang-selector" name="lang">
-							<img id="lang-flag" src="/img/flags/en.png" alt="lang-flag" />
+						<button class="btn" data-bs-toggle="dropdown" id="lang-selector" name="lang">
+							<img id="lang-flag-mobile" src="/img/flags/en.png" alt="lang-flag" />
 						</button>
 						<div class="dropdown-menu rounded" style="min-width: auto; padding: 0;">
-							<button id="lang-en" class="dropdown-item rounded">
+							<button class="dropdown-item rounded" onclick="changeLang('en')">
 								<img src="/img/flags/en.png" alt="en-flag" />
 							</button>
-							<button id="lang-es" class="dropdown-item rounded">
+							<button class="dropdown-item rounded" onclick="changeLang('es')">
 								<img src="/img/flags/es.png" alt="en-flag" />
 							</button>
 						</div>
 					</div>
+					<!-- End lang flags mobile -->
 					<button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -101,19 +103,21 @@
 						<a href="#testimonial" class="nav-item nav-link">Testimonial</a>
 						<a href="#contact" class="nav-item nav-link">Contact</a>
 					</div>
+					<!-- Init lang flags desktop-->
 					<div class="d-none d-lg-flex dropdown mx-2">
-						<button class="btn" data-bs-toggle="dropdown" disabled="true" id="lang-selector" name="lang">
-							<img id="lang-flag" src="/img/flags/en.png" alt="lang-flag" />
+						<button class="btn" data-bs-toggle="dropdown" id="lang-selector" name="lang">
+							<img id="lang-flag-desktop" src="/img/flags/en.png" alt="lang-flag" />
 						</button>
 						<div class="dropdown-menu rounded" style="min-width: auto; padding: 0;">
-							<button id="lang-en" class="dropdown-item rounded">
+							<button class="dropdown-item rounded" onclick="changeLang('en')">
 								<img src="/img/flags/en.png" alt="en-flag" />
 							</button>
-							<button id="lang-es" class="dropdown-item rounded">
+							<button class="dropdown-item rounded" onclick="changeLang('es')">
 								<img src="/img/flags/es.png" alt="en-flag" />
 							</button>
 						</div>
 					</div>
+					<!-- End lang flags desktop -->
 				</div>
 
 				<div class="d-none d-xl-flex flex-shirink-0">

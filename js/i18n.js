@@ -1,4 +1,15 @@
+const flagMobile = document.getElementById("lang-flag-mobile");
+const flagDesktop = document.getElementById("lang-flag-desktop");
+
+function changeLang(lang) {
+  i18next.changeLanguage(lang);
+}
+
 function updateContent() {
+  const lang = i18next.language;
+  flagMobile.setAttribute('src', `/img/flags/${lang}.png`)
+  flagDesktop.setAttribute('src', `/img/flags/${lang}.png`)
+
   const elements = document.getElementsByClassName("i18n");
   for (let i = 0; i < elements.length; i++) {
     const element = elements[i];
@@ -26,23 +37,9 @@ async function i18Loader() {
   updateContent();
 
   i18next.on("languageChanged", (lang) => {
-    langFlag.setAttribute('src', `/img/flags/${lang}.png`)
     updateContent();
   });
 
-  const langSelector = document.getElementById("lang-selector");
-  const langFlag = document.getElementById("lang-flag");
-  const btnEn = document.getElementById("lang-en");
-  const btnEs = document.getElementById("lang-es");
-
-  langSelector.removeAttribute("disabled");
-  btnEn.addEventListener("click", () => {
-    i18next.changeLanguage('en');
-  });
-
-  btnEs.addEventListener("click", () => {
-    i18next.changeLanguage('es');
-  });
 }
 
 i18Loader();
