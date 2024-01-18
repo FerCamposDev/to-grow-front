@@ -29,6 +29,8 @@
 
 	<!-- Template Stylesheet -->
 	<link href="css/style.css" rel="stylesheet">
+
+	<script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
 </head>
 
 <body>
@@ -50,8 +52,21 @@
 								class="fas fa-envelope me-2 text-secondary"></i></a>info@togrow.com.ar</small>
 				</div>
 				<!-- <marquee class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></marquee> -->
-				<div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small>
+				<div id="note" class="text-secondary d-none d-xl-flex">
+					<small data-i18n="note" class="i18n">Note : We help you to Grow your Business</small>
 				</div>
+
+
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" data-bs-toggle="dropdown" disabled="true" id="langSelector" name="lang">
+						English
+					</button>
+					<div class="dropdown-menu rounded">
+						<button id="langEn" value="en" class="dropdown-item">English</button>
+						<button id="langEs" value="es" class="dropdown-item">Español</button>
+					</div>
+				</div>
+
 				<!-- <div class="top-link">
 						<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
 						<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
@@ -944,6 +959,7 @@
 	<!-- Template Javascript -->
 	<script src="js/main.js"></script>
 	<script src="js/form.js"></script>
+	<script src="js/i18n.js"></script>
 </body>
 
 </html>
