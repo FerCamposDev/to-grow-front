@@ -108,5 +108,10 @@
   "contact_us": "Contact us",
   "help_link": "Help Link",
   "terms": "Terms of use",
-  "privacy": "Privacy Policy"
+  "privacy": "Privacy Policy",
+  "404": {
+    "title": "Page Not Found",
+    "desc": "We’re sorry, the page you have looked for does not exist in our website!",
+    "button": "Go Back To Home"
+  }
 }

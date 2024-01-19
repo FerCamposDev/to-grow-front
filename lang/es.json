@@ -108,5 +108,10 @@
   "contact_us": "Contáctenos",
   "help_link": "Ayuda",
   "terms": "Términos y Condiciones",
-  "privacy": "Política de Privacidad"
+  "privacy": "Política de Privacidad",
+  "404": {
+    "title": "Página no encontrada",
+    "desc": "¡Lo sentimos, la página que ha buscado no existe en nuestro sitio web!",
+    "button": "Volver al Inicio"
+  }
 }
