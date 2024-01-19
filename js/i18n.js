@@ -1,6 +1,9 @@
 const flagMobile = document.getElementById("lang-flag-mobile");
 const flagDesktop = document.getElementById("lang-flag-desktop");
 const whatsappButtons = document.getElementsByClassName('i18n-whatsapp')
+const formName = document.getElementById('form-name');
+const formProject = document.getElementById('form-project');
+const formMsg = document.getElementById('form-msg');
 
 function changeLang(lang) {
   i18next.changeLanguage(lang);
@@ -10,6 +13,9 @@ function updateContent() {
   const lang = i18next.language;
   flagMobile.setAttribute('src', `/img/flags/${lang}.png`);
   flagDesktop.setAttribute('src', `/img/flags/${lang}.png`);
+  formName.setAttribute('placeholder', i18next.t('your_name'));
+  formProject.setAttribute('placeholder', i18next.t('project'));
+  formMsg.setAttribute('placeholder', i18next.t('message'));
   for (let i = 0; i < whatsappButtons.length; i++) {
     whatsappButtons[i].setAttribute('href', i18next.t('whatsapp'));
   }
