@@ -1,55 +1,112 @@
 {
-  "note": "Nota : Te ayudamos a crecer en tu negocio!",
-  "About": "About",
-  "Home": "Home",
-  "Testimonial": "Testimonial",
-  "Services": "Services",
-  "Unparalleled Experience": "Unparalleled Experience",
-  "Contact": "Contact",
-  "We stand out with exceptional customer care, overcoming technological barriers to ensure your success. Discover a unique experience with us.": "We stand out with exceptional customer care, overcoming technological barriers to ensure your success. Discover a unique experience with us.",
-  "Premium Customer Care": "Premium Customer Care",
-  "Next": "Next",
-  "Previous": "Previous",
-  "Thousands of successful business": "Thousands of successful business",
-  "Success in getting happy customer": "Success in getting happy customer",
-  "Stars reviews given by satisfied clients": "Stars reviews given by satisfied clients",
-  "Total clients who love ToGrow": "Total clients who love ToGrow",
-  "About ToGrow And It's Innovative IT Solutions": "About ToGrow And It's Innovative IT Solutions",
-  "About Us": "About Us",
-  "With an agile approach and commitment to excellence, we specialize in creating digital experiences that drive business success. We collaborate closely with clients of all sizes, delivering innovative products and automating processes to optimize operational efficiency. Join us on the journey to digital transformation, where our software solutions take businesses to the next level with exceptional results.": "With an agile approach and commitment to excellence, we specialize in creating digital experiences that drive business success. We collaborate closely with clients of all sizes, delivering innovative products and automating processes to optimize operational efficiency. Join us on the journey to digital transformation, where our software solutions take businesses to the next level with exceptional results.",
-  "We are a specialist software development company, with a focus on providing high quality, customized solutions to our clients. We offer a wide range of development services, from web and mobile applications to desktop software development and business process automation.": "We are a specialist software development company, with a focus on providing high quality, customized solutions to our clients. We offer a wide range of development services, from web and mobile applications to desktop software development and business process automation.",
-  "Services Built Specifically For Your Business": "Services Built Specifically For Your Business",
-  "Our Services": "Our Services",
-  "Web design goes beyond aesthetics; it's about crafting captivating experiences that reflect your brand identity. From visual layout to intuitive navigation, our web design approach aims to turn visitors into customers, leaving a lasting impression.": "Web design goes beyond aesthetics; it's about crafting captivating experiences that reflect your brand identity. From visual layout to intuitive navigation, our web design approach aims to turn visitors into customers, leaving a lasting impression.",
-  "Web Design": "Web Design",
-  "With web development, we create not just websites but solutions that drive user interaction. From speed optimization to mobile adaptability, we ensure every aspect of your site not only functions but propels user engagement and retention.": "With web development, we create not just websites but solutions that drive user interaction. From speed optimization to mobile adaptability, we ensure every aspect of your site not only functions but propels user engagement and retention.",
-  "Web Development": "Web Development",
-  "UX/UI design is about emotionally connecting with your audience. We create experiences that are not only visually appealing (UI) but also provide an immersive narrative (UX). Each interaction is strategically designed to drive user loyalty.": "UX/UI design is about emotionally connecting with your audience. We create experiences that are not only visually appealing (UI) but also provide an immersive narrative (UX). Each interaction is strategically designed to drive user loyalty.",
-  "UI/UX Design": "UI/UX Design",
-  "Cybersecurity ensures customer trust. By proactively protecting valuable information, we convey an image of a secure brand committed to privacy. Your security is our priority to build lasting relationships with your customers.": "Cybersecurity ensures customer trust. By proactively protecting valuable information, we convey an image of a secure brand committed to privacy. Your security is our priority to build lasting relationships with your customers.",
-  "Web Security": "Web Security",
-  "In the digital realm, marketing is the key to standing out. From search engine optimization (SEO) to crafting impactful social media campaigns, our digital marketing approach drives online visibility and converts clicks into conversions.": "In the digital realm, marketing is the key to standing out. From search engine optimization (SEO) to crafting impactful social media campaigns, our digital marketing approach drives online visibility and converts clicks into conversions.",
-  "Digital Marketing": "Digital Marketing",
-  "We develop applications that not only fulfill needs but create memorable experiences. From mobile apps that streamline daily life to customized solutions, our app development approach focuses on positive impact and user loyalty.": "We develop applications that not only fulfill needs but create memorable experiences. From mobile apps that streamline daily life to customized solutions, our app development approach focuses on positive impact and user loyalty.",
-  "App Development": "App Development",
-  "Our Client Saying!": "Our Client Saying!",
-  "Our Testimonial": "Our Testimonial",
-  "Working with ToGrow was a wise decision for Soles Academy. They not only met our expectations in terms of software development but also offered creative solutions to enhance user usability and experience. The team demonstrated a deep understanding of our business needs. Very satisfied with the results!": "Working with ToGrow was a wise decision for Soles Academy. They not only met our expectations in terms of software development but also offered creative solutions to enhance user usability and experience. The team demonstrated a deep understanding of our business needs. Very satisfied with the results!",
-  "Soles Academy": "Soles Academy",
-  "ToGrow's team truly did an outstanding job in developing our product for Rakun Architects. From design to implementation, each stage was handled with professionalism and efficiency. Furthermore, their ability to adapt to last-minute changes was impressive. Thanks for making our project a success!": "ToGrow's team truly did an outstanding job in developing our product for Rakun Architects. From design to implementation, each stage was handled with professionalism and efficiency. Furthermore, their ability to adapt to last-minute changes was impressive. Thanks for making our project a success!",
-  "Rakun Architects": "Rakun Architects",
-  "I can't express how grateful we are to ToGrow. Their customer-centric approach and problem-solving ability were crucial to the success of our project at 'La Nona' Restaurant. If you're looking for a reliable and proactive development team, ToGrow is the right choice. Highly recommended!": "I can't express how grateful we are to ToGrow. Their customer-centric approach and problem-solving ability were crucial to the success of our project at 'La Nona' Restaurant. If you're looking for a reliable and proactive development team, ToGrow is the right choice. Highly recommended!",
-  "'La Nona' Restaurant": "'La Nona' Restaurant",
-  "Incredible experience working with ToGrow! Their software development team exceeded our expectations at Southern Financial Services. They met deadlines and delivered a final product of high quality. Communication was smooth and transparent throughout. I would definitely recommend ToGrow's services to any company seeking reliable and efficient technological solutions.": "Incredible experience working with ToGrow! Their software development team exceeded our expectations at Southern Financial Services. They met deadlines and delivered a final product of high quality. Communication was smooth and transparent throughout. I would definitely recommend ToGrow's services to any company seeking reliable and efficient technological solutions.",
-  "Southern Financial Services": "Southern Financial Services",
-  "I'm impressed with the professionalism and expertise of ToGrow. I collaborated closely with their team on the development of a complex web project for Lanin Legal Studio, and their technical knowledge and attention to detail were exceptional. I will certainly consider them for future projects and recommend them to colleagues!": "I'm impressed with the professionalism and expertise of ToGrow. I collaborated closely with their team on the development of a complex web project for Lanin Legal Studio, and their technical knowledge and attention to detail were exceptional. I will certainly consider them for future projects and recommend them to colleagues!",
-  "Lanin Legal Studio": "Lanin Legal Studio",
-  "Contact us for any questions": "Contact us for any questions",
-  "Get In Touch": "Get In Touch",
-  "Your satisfaction is our priority, and we look forward to hearing from you!": "Your satisfaction is our priority, and we look forward to hearing from you!",
-  "We're here to assist you with any inquiries you may have. Whether you're interested in our software development services, have questions about a specific project, or just want to say hello, feel free to reach out to us using the form below.": "We're here to assist you with any inquiries you may have. Whether you're interested in our software development services, have questions about a specific project, or just want to say hello, feel free to reach out to us using the form below.",
-  "Call Us": "Call Us",
-  "Address": "Address",
-  "Send Message": "Send Message",
-  "Email Us": "Email Us"
+  "title": "ToGrow - Soluciones IT",
+  "note": "Nota : Te ayudamos a hacer crecer tu negocio!",
+  "home": "Inicio",
+  "about": "Nosotros",
+  "testimonial": "Testimoniales",
+  "services": "Servicios",
+  "contact": "Contacto",
+  "have_any_questions": "Tiene preguntas?",
+  "carousel_1": {
+    "header": "Impulsa tu éxito",
+    "title": "Soluciones de software a medida",
+    "desc": "Ofrecemos soluciones de software avanzadas para impulsar el crecimiento de su negocio, combinando la calidad y la personalización a la vanguardia de la tecnología."
+  },
+  "carousel_2": {
+    "header": "Socios estratégicos",
+    "title": "Supere los desafíos tecnológicos",
+    "desc": "Convertimos los desafíos tecnológicos en oportunidades de éxito. Somos sus socios estratégicos, comprometidos con la excelencia y el servicio excepcional."
+  },
+  "carousel_3": {
+    "header": "Experiencia incomparable",
+    "title": "Atención al cliente premium",
+    "desc": "Nos destacamos con una atención al cliente excepcional, superando las barreras tecnológicas para garantizar su éxito. Descubra una experiencia única con nosotros."
+  },
+  "statistics": {
+    "1": "Éxito en conseguir un cliente feliz",
+    "2": "Miles de negocios exitosos",
+    "3": "Total de clientes que aman crecer",
+    "4": "Revisiones de estrellas dadas por clientes satisfechos"
+  },
+  "about_section": {
+    "header": "Sobre nosotros",
+    "title": "Sobre ToGrow y son soluciones innovadoras de IT ",
+    "desc1": "Somos una empresa especializada de desarrollo de software, con un enfoque en proporcionar soluciones personalizadas de alta calidad a nuestros clientes. Ofrecemos una amplia gama de servicios de desarrollo, desde aplicaciones web y móviles hasta desarrollo de software de escritorio y automatización de procesos comerciales.",
+    "desc2": "Con un enfoque ágil y un compromiso con la excelencia, nos especializamos en la creación de experiencias digitales que impulsan el éxito comercial. Colaboramos estrechamente con clientes de todos los tamaños, ofreciendo productos innovadores y automatizando procesos para optimizar la eficiencia operativa. Únase a nosotros en el viaje a la transformación digital, donde nuestras soluciones de software llevan a las empresas al siguiente nivel con resultados excepcionales."
+  },
+  "services_section": {
+    "header": "Nuestros servicios",
+    "title": "Servicios creados específicamente para su negocio",
+    "web_design": "Diseño web",
+    "web_design_desc": "El diseño web va más allá de la estética; se trata de elaborar experiencias cautivadoras que reflejen la identidad de su marca. Desde el diseño visual hasta la navegación intuitiva, nuestro enfoque de diseño web tiene como objetivo convertir a los visitantes en clientes, dejando una impresión duradera.",
+    "web_development": "Desarrollo web",
+    "web_development_desc": "Con el desarrollo web, creamos no solo sitios web, sino también soluciones que impulsan la interacción del usuario. Desde la optimización de la velocidad hasta la adaptabilidad móvil, nos aseguramos de que cada aspecto de su sitio no solo funcione sino que impulse la participación y la retención del usuario.",
+    "ui_design": "Diseño UI/UX",
+    "ui_design_desc": "El diseño de UX/UI se trata de conectarse emocionalmente con su audiencia. Creamos experiencias que no solo son visualmente atractivas (UI) sino que también proporcionan una narrativa inmersiva (UX). Cada interacción está estratégicamente diseñada para impulsar la lealtad del usuario.",
+    "web_security": "Seguridad web",
+    "web_security_desc": "La ciberseguridad garantiza la confianza del cliente. Al proteger de manera proactiva la información valiosa, transmitimos una imagen de una marca segura comprometida con la privacidad. Su seguridad es nuestra prioridad para construir relaciones duraderas con sus clientes.",
+    "digital_marketing": "Publicidad digital",
+    "digital_marketing_desc": "En el ámbito digital, el marketing es la clave para destacarse. Desde la optimización de motores de búsqueda (SEO) hasta la elaboración de campañas de redes sociales impactantes, nuestro enfoque de marketing digital impulsa la visibilidad en línea y convierte los clics en conversiones.",
+    "app_development": "Desarrollo de aplicaciones",
+    "app_development_desc": "Desarrollamos aplicaciones que no solo satisfacen las necesidades, sino que crean experiencias memorables. Desde aplicaciones móviles que racionalizan la vida diaria hasta soluciones personalizadas, nuestro enfoque de desarrollo de aplicaciones se centra en el impacto positivo y la lealtad del usuario."
+  },
+  "testimonial_section": {
+    "header": "Nuestro testimonio",
+    "title": "¡Nuestros clientes dicen!",
+    "maria": {
+      "name": "Maria Rodríguez",
+      "profession": "Sur Servicios Financieros",
+      "desc": "¡Increíble experiencia trabajando con ToGrow! Su equipo de desarrollo de software superó nuestras expectativas en Servicios Financieros del Sur. Cumplieron con los plazos y entregaron un producto final de alta calidad. La comunicación fue fluida y transparente en todo momento. Definitivamente recomendaría los servicios de ToGrow a cualquier empresa que busque soluciones tecnológicas confiables y eficientes."
+    },
+    "javier": {
+      "name": "Javier Sánchez",
+      "profession": "Estudio Jurídico Lanin",
+      "desc": "Estoy impresionado con la profesionalidad y la experiencia de ToGrow. Colaboré estrechamente con su equipo en el desarrollo de un proyecto web complejo para el Estudio Juridico Lanin, y su conocimiento técnico y atención al detalle fueron excepcionales. Sin duda, los consideraré para futuros proyectos y los recomendaré a colegas! "
+    },
+    "ana": {
+      "name": "Ana López",
+      "profession": "Academia Soles",
+      "desc": "Trabajar con ToGrow fue una sabia decisión para Academia Soles. No solo cumplieron con nuestras expectativas en términos de desarrollo de software, sino que también ofrecieron soluciones creativas para mejorar la usabilidad y la experiencia de los usuarios. El equipo demostró una comprensión profunda de nuestras necesidades comerciales. Muy satisfecha con los resultados!"
+    },
+    "carlos": {
+      "name": "Carlos Martínez",
+      "profession": "Rakun Arquitectos",
+      "desc": "El equipo de ToGrow realmente hizo un trabajo excepcional en el desarrollo de nuestro producto para el estudio. Desde el diseño hasta la implementación, cada etapa se manejó con profesionalismo y eficiencia. Además, su capacidad para adaptarse a los cambios de último minuto fue impresionante. Gracias por hacer nuestro proyecto un éxito!"
+    },
+    "claudia": {
+      "name": "Claudia Torres",
+      "profession": "Restaurante 'La Nona'",
+      "desc": "No puedo expresar lo agradecidos que estamos de crecer. Su enfoque centrado en el cliente y su capacidad de resolución de problemas fueron cruciales para el éxito de nuestro proyecto en el restaurante. Si está buscando un equipo de desarrollo confiable y proactivo, ToGrow es la elección correcta. ¡Muy recomendable!"
+    }
+  },
+  "contact_section": {
+    "header": "Póngase en contacto",
+    "title": "Contáctenos para cualquier pregunta",
+    "desc1": "Estamos aquí para ayudarlo con cualquier consulta que pueda tener. Ya sea que esté interesado en nuestros servicios de desarrollo de software, tenga preguntas sobre un proyecto específico o simplemente quiera saludar, no dude en comunicarse con nosotros utilizando el formulario a continuación.",
+    "desc2": "Su satisfacción es nuestra prioridad, ¡Esperamos tener noticias suyas!"
+  },
+  "address": "Dirección",
+  "call_us": "Llámenos",
+  "email_us": "Email",
+  "your_name": "Su nombre",
+  "your_email": "Su Email",
+  "project": "Projecto",
+  "message": "Mensaje",
+  "send_message": "Enviar",
+  "contact_success": {
+    "title": "¡Gracias por contactarnos!",
+    "desc": "Estamos emocionados de recibir su mensaje, y nuestro equipo lo revisará en breve. ¡Nos pondremos en contacto pronto para discutir cómo podemos ayudarlo!"
+  },
+  "contact_error": {
+    "title": "¡Lo siento! Parece que hubo un problema para enviar el formulario",
+    "desc": "Vuelva a intentarlo o comuníquese con nosotros directamente a info@togrow.com.ar para que podamos ayudarlo de inmediato. ¡Gracias por su comprensión!"
+  },
+  "short_link": "Acceso Rápido",
+  "about_us": "Sobre Nosotros",
+  "our_services": "Nuestros Servicios",
+  "our_testimonials": "Nuestros Testimonios",
+  "contact_us": "Contáctenos",
+  "help_link": "Ayuda",
+  "terms": "Términos y Condiciones",
+  "privacy": "Política de Privacidad"
 }

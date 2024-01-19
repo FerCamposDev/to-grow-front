@@ -1,8 +1,8 @@
 {
   "title": "ToGrow - IT Solutions",
   "note": "Note : We help you to Grow your Business",
-  "about": "About",
   "home": "Home",
+  "about": "About",
   "testimonial": "Testimonial",
   "services": "Services",
   "contact": "Contact",
@@ -52,7 +52,7 @@
   },
   "testimonial_section": {
     "header": "Our Testimonial",
-    "title": "Our Client Saying!",
+    "title": "Our Clients Saying!",
     "maria": {
       "name": "Maria Rodriguez",
       "profession": "Southern Financial Services",
