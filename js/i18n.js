@@ -11,6 +11,9 @@ function changeLang(lang) {
 
 function updateContent() {
   const lang = i18next.language;
+
+  document.documentElement.setAttribute('lang', lang);
+
   flagMobile.setAttribute('src', `/img/flags/${lang}.png`);
   flagDesktop.setAttribute('src', `/img/flags/${lang}.png`);
   formName.setAttribute('placeholder', i18next.t('your_name'));
