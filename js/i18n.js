@@ -32,7 +32,10 @@ function updateContent() {
 }
 
 async function i18Loader() {
-  const initialLang = localStorage.getItem('lang') || 'en';
+  let defaultLang = window.navigator.language.split('-')[0];
+  console.log('defaultLang :>> ', defaultLang);
+  if (defaultLang !== 'es' && defaultLang !== 'en') navigatorLang = 'en';
+  const initialLang = localStorage.getItem('lang') || defaultLang;
   const langs = ["en", "es"];
   const jsons = await Promise.all(
     langs.map((lang) => fetch("lang/" + lang + ".json").then((r) => r.json()))
