@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ToGrow - IT Solutions</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+    <div class="container">
+      <div class="d-flex justify-content-between topbar">
+        <div class="top-info">
+          <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>RP2
+            KM 70, Buenos Aires</small>
+          <small class="me-3 text-white-50"><a href="#"><i
+                class="fas fa-envelope me-2 text-secondary"></i></a>info@togrow.com.ar</small>
+        </div>
+        <div id="note" class="text-secondary d-none d-xl-flex">
+          <small data-i18n="note" class="i18n">Note : We help you to Grow your Business</small>
+        </div>
+
+        <!-- <div class="top-link">
+						<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+						<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+						<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+						<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+				</div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <div class="container-fluid bg-primary">
+    <div class="container">
+      <nav class="navbar navbar-dark navbar-expand-lg py-0">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img class="logo" src="/img/favicon/android-chrome-192x192.png" alt="logo" />
+          <h1 class="text-white fw-bold d-block p-0 m-0">To<span class="text-secondary">Grow</span> </h1>
+        </a>
+        <div class="d-flex">
+          <!-- Init lang flags mobile -->
+          <div class="d-flex d-lg-none dropdown mx-2">
+            <button class="btn" data-bs-toggle="dropdown" id="lang-selector" name="lang">
+              <img id="lang-flag-mobile" src="/img/flags/en.png" alt="lang-flag" />
+            </button>
+            <div class="dropdown-menu rounded" style="min-width: auto; padding: 0;">
+              <button class="dropdown-item rounded" onclick="changeLang('en')">
+                <img src="/img/flags/en.png" alt="en-flag" />
+              </button>
+              <button class="dropdown-item rounded" onclick="changeLang('es')">
+                <img src="/img/flags/es.png" alt="en-flag" />
+              </button>
+            </div>
+          </div>
+          <!-- End lang flags mobile -->
+          <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+          <div class="navbar-nav ms-auto mx-xl-auto p-0">
+            <a href="#" data-i18n="home" class="i18n nav-item nav-link active text-secondary">Home</a>
+            <a href="#about" data-i18n="about" class="i18n nav-item nav-link">About</a>
+            <a href="#services" data-i18n="services" class="i18n nav-item nav-link">Services</a>
+            <a href="#testimonial" data-i18n="testimonial" class="i18n nav-item nav-link">Testimonial</a>
+            <a href="#contact" data-i18n="contact" class="i18n nav-item nav-link">Contact</a>
+          </div>
+          <!-- Init lang flags desktop-->
+          <div class="d-none d-lg-flex dropdown mx-2">
+            <button class="btn" data-bs-toggle="dropdown" id="lang-selector" name="lang">
+              <img id="lang-flag-desktop" src="/img/flags/en.png" alt="lang-flag" />
+            </button>
+            <div class="dropdown-menu rounded" style="min-width: auto; padding: 0;">
+              <button class="dropdown-item rounded" onclick="changeLang('en')">
+                <img src="/img/flags/en.png" alt="en-flag" />
+              </button>
+              <button class="dropdown-item rounded" onclick="changeLang('es')">
+                <img src="/img/flags/es.png" alt="en-flag" />
+              </button>
+            </div>
+          </div>
+          <!-- End lang flags desktop -->
+        </div>
+
+        <div class="d-none d-xl-flex flex-shirink-0">
+          <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+            <a target="_blank"
+              href="https://wa.me/+541150595098?text=Hello%20I'm%20interested%20in%20create%20a%20new%20project"
+              class="i18n-whatsapp position-relative animated tada infinite">
+              <i class="fab fa-whatsapp text-white fa-2x"></i>
+              <div class="position-absolute" style="top: -7px; left: 20px;">
+                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="d-flex flex-column pe-4">
+            <span data-i18n="have_any_questions" class="i18n text-white-50">Have any questions?</span>
+            <span class="text-secondary">+5411 5059 5098</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+
+
+
+  
+  <div class="container-fluid py-5 my-5 wow fadeIn" data-wow-delay="0.3s">
+    <!-- <div class="container text-center py-5"> -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          
+
+          <div id="row-unique-0" class="vc_row row-container" data-parent="true" data-section="0">
+            <div class="row limit-width row-parent" data-imgready="true">
+              <div class="wpb_row row-inner">
+                <div class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 no-internal-gutter">
+                  <div class="uncol style-light">
+                    <div class="uncoltable">
+                      <div class="uncell  vc_custom_1584930758594 single-block-padding">
+                        <div class="uncont">
+                          <div class="vc_custom_heading_wrap ">
+                            <div class="heading-text el-text">
+                              <h2 class="font-329340 h2 text-color-162918stb-color">Pol&iacute;ticas de Privacidad</h2>
+                            </div>
+                            <div class="clear">&nbsp;</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="row-unique-1" class="vc_row row-container" data-parent="true" data-section="1">
+            <div class="row limit-width row-parent" data-imgready="true">
+              <div class="wpb_row row-inner">
+                <div class="wpb_column pos-top pos-center align_left column_parent col-lg-12 no-internal-gutter">
+                  <div class="uncol style-light">
+                    <div class="uncoltable">
+                      <div class="uncell no-block-padding">
+                        <div class="uncont">
+                          <div class="uncode_text_column text-small">
+                            <p><span class="font-329340">La presente Pol&iacute;tica de Privacidad establece los t&eacute;rminos
+                                en que <strong>ToGrow</strong>&nbsp;utiliza y protege la informaci&oacute;n que es proporcionada
+                                por los usuarios al momento de utilizar su sitio web. Nuestra compa&ntilde;&iacute;a est&aacute;
+                                comprometida con la seguridad de los datos de sus usuarios. Cuando le solicitamos llenar los
+                                campos de informaci&oacute;n personal con la cual usted pueda ser identificado, lo hacemos
+                                asegurando que s&oacute;lo se emplear&aacute; de acuerdo con los t&eacute;rminos de este
+                                documento. Sin embargo, &eacute;sta Pol&iacute;tica de Privacidad puede cambiar con el tiempo o
+                                ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta
+                                p&aacute;gina para asegurarse que est&aacute; de acuerdo con dichos cambios.</span></p>
+                            <h4><strong><span class="font-329340">Informaci&oacute;n que es recopilada</span></strong></h4>
+                            <p><span class="font-329340">Nuestro sitio web podr&aacute; recopilar informaci&oacute;n personal
+                                como nombre, informaci&oacute;n de contacto, direcci&oacute;n de correo electr&oacute;nico o
+                                informaci&oacute;n demogr&aacute;fica. As&iacute; mismo cuando sea necesario podr&aacute; ser
+                                requerida informaci&oacute;n adicional espec&iacute;fica para procesar alg&uacute;n pedido o
+                                realizar una entrega o facturaci&oacute;n.</span></p>
+                            <h4><strong><span class="font-329340">Uso de la informaci&oacute;n recogida</span></strong></h4>
+                            <p><span class="font-329340">Nuestro sitio web emplea la informaci&oacute;n con el fin de mejorar
+                                nuestros productos y servicios.&nbsp; Es posible que sean enviados correos electr&oacute;nicos
+                                peri&oacute;dicamente a trav&eacute;s de nuestro sitio con ofertas especiales, nuevos productos
+                                y otra informaci&oacute;n publicitaria que consideremos relevante para usted o que pueda
+                                brindarle alg&uacute;n beneficio, estos correos electr&oacute;nicos ser&aacute;n enviados a la
+                                direcci&oacute;n que usted proporcione y podr&aacute;n ser cancelados en cualquier
+                                momento.</span></p>
+                            <p><span class="font-329340"><strong>ToGrow</strong>&nbsp;&nbsp;est&aacute; comprometido con
+                                mantener su informaci&oacute;n segura. Usamos sistemas avanzados y los actualizamos asiduamente
+                                para asegurarnos que sus datos est&aacute;n seguros.</span></p>
+                            <h4><strong><span class="font-329340">Cookies</span></strong></h4>
+                            <p><span class="font-329340">Una cookie se refiere a un fichero que es enviado con la finalidad de
+                                solicitar permiso para almacenarse en su ordenador. Al aceptar dicho fichero se crea la cookie y
+                                esta sirve entonces para tener informaci&oacute;n respecto al tr&aacute;fico web, y
+                                tambi&eacute;n facilita las futuras visitas a nuestra web.</span></p>
+                            <p><span class="font-329340">Otra funci&oacute;n que tienen las cookies es que con ellas los sitios
+                                web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de
+                                su web. Nuestro sitio web emplea las cookies para poder identificar las p&aacute;ginas que son
+                                visitadas y su frecuencia. Esta informaci&oacute;n es empleada &uacute;nicamente para
+                                an&aacute;lisis estad&iacute;stico y despu&eacute;s la informaci&oacute;n se elimina de forma
+                                permanente.</span></p>
+                            <p><span class="font-329340">Usted puede eliminar las cookies en cualquier momento desde su
+                                ordenador. Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web,
+                                est&aacute;s no dan acceso a informaci&oacute;n de su ordenador ni de usted, a menos de que
+                                usted as&iacute; lo quiera y la proporcione directamente.</span></p>
+                            <p><span class="font-329340">Usted puede aceptar o negar el uso de cookies, sin embargo la
+                                mayor&iacute;a de navegadores aceptan cookies autom&aacute;ticamente pues sirve para tener un
+                                mejor servicio web. Ud. tambi&eacute;n puede cambiar la configuraci&oacute;n de su ordenador
+                                para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros
+                                servicios.</span></p>
+                            <h4><strong><span class="font-329340">Registro de visita</span></strong></h4>
+                            <p><span class="font-329340">Utilizamos servicios de registro de visitas provistos por empresas de
+                                publicidad digital como Google, Facebook, Twitter y otras similares para conocer las
+                                caracter&iacute;sticas del p&uacute;blico que nos visita y como interact&uacute;an con nuestra
+                                publicidad digital. Esta informaci&oacute;n es gestionada directamente en cada plataforma y es
+                                &uacute;nicamente utilizada a los efectos de medici&oacute;n del impacto publicitario lo que nos
+                                permite optimizar nuestras campa&ntilde;as ofreciendo nuestros servicios al p&uacute;blico que
+                                es m&aacute;s probable que este interesado en nuestros productos y servicios.</span></p>
+                            <h4><strong><span class="font-329340">Enlaces a Terceros</span></strong></h4>
+                            <p><span class="font-329340">Este sitio web pudiera contener enlaces a otros sitios que pudieran ser
+                                de su inter&eacute;s. Una vez que usted de clic en estos enlaces y abandone nuestra
+                                p&aacute;gina, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos
+                                responsables de los t&eacute;rminos o privacidad ni de la protecci&oacute;n de sus datos en esos
+                                otros sitios terceros. Dichos sitios est&aacute;n sujetos a sus propias pol&iacute;ticas de
+                                privacidad por lo cual es recomendable que los consulte para confirmar que usted est&aacute; de
+                                acuerdo con estas.</span></p>
+                            <h4><strong><span class="font-329340">Control de su informaci&oacute;n personal</span></strong></h4>
+                            <p><span class="font-329340">En cualquier momento usted puede restringir la recopilaci&oacute;n o el
+                                uso de la informaci&oacute;n personal que es proporcionada a nuestro sitio web.&nbsp; Cada vez
+                                que se le solicite rellenar un formulario,&nbsp; puede marcar o desmarcar la opci&oacute;n de
+                                recibir informaci&oacute;n por correo electr&oacute;nico.&nbsp; En caso de que haya marcado la
+                                opci&oacute;n de recibir nuestro bolet&iacute;n o publicidad usted puede cancelarla en cualquier
+                                momento.</span></p>
+                            <p><span class="font-329340">Esta compa&ntilde;&iacute;a no vender&aacute;, ceder&aacute; ni
+                                distribuir&aacute; la informaci&oacute;n personal que es recopilada sin su consentimiento, salvo
+                                que sea requerido por un juez con un orden judicial.&nbsp;<strong>ToGrow</strong>&nbsp;se
+                                reserva el derecho de cambiar los t&eacute;rminos de la presente Pol&iacute;tica de Privacidad
+                                en cualquier momento.</span></p>
+                            <p><span class="font-329340">Puede remitir su solicitud de remoci&oacute;n o de los datos que
+                                tenemos sobre Ud. enviando un correo a&nbsp;<a
+                                  href="mailto:contacto@softwaretestingbureau.com">info@togrow.com.ar</a>.</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+    <div class="container pt-5 pb-4">
+      <div class="row g-5 justify-content-between">
+        <div class="col-lg-3 col-md-6">
+
+          <a href="#" class="d-flex align-items-center">
+            <img class="logo" src="/img/favicon/android-chrome-192x192.png" alt="logo" />
+            <h1 class="text-white fw-bold d-block p-0 m-0">To<span class="text-secondary">Grow</span> </h1>
+          </a>
+          <!-- <p class="mt-4 text-light">To grow, you will grow.</p> -->
+          <p class="mt-4 text-light">We grow, you grow.</p>
+          <!-- <div class="d-flex hightech-link">
+						<a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+								class="fab fa-facebook-f text-primary"></i></a>
+						<a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+								class="fab fa-twitter text-primary"></i></a>
+						<a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+								class="fab fa-instagram text-primary"></i></a>
+						<a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i
+								class="fab fa-linkedin-in text-primary"></i></a>
+					</div> -->
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span data-i18n="short_link" class="i18n h3 text-secondary">Short Link</span>
+          <div class="mt-4 d-flex flex-column short-link">
+            <a href="#" data-i18n="home" class="i18n mb-2 text-white"><i
+                class="fas fa-angle-right text-secondary me-2"></i>Home</a>
+            <a href="#about" data-i18n="about_us" class="i18n mb-2 text-white"><i
+                class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+            <a href="#services" data-i18n="our_services" class="i18n mb-2 text-white"><i
+                class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+            <a href="#testimonial" data-i18n="our_testimonials" class="i18n mb-2 text-white"><i
+                class="fas fa-angle-right text-secondary me-2"></i>Our Testimonials</a>
+            <a href="#contact" data-i18n="contact_us" class="i18n mb-2 text-white"><i
+                class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span data-i18n="help_link" class="i18n h3 text-secondary">Help Link</span>
+          <div class="mt-4 d-flex flex-column help-link">
+            <a href="#" data-i18n="terms" class="i18n mb-2 text-white"><i
+                class="fas fa-angle-right text-secondary me-2"></i>Terms of use</a>
+            <a href="#" data-i18n="privacy" class="i18n mb-2 text-white"><i
+                class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#contact" data-i18n="contact_us" class="i18n h3 text-secondary">Contact Us</a>
+          <div class="text-white mt-4 d-flex flex-column contact-link">
+            <a href="https://maps.app.goo.gl/9HLdX3aV1kiakx3i6" target="_blank"
+              class="pb-3 text-light border-bottom border-primary">
+              <i class="fas fa-map-marker-alt text-secondary me-2"></i> RP2 KM 70, Buenos Aires</a>
+            <a href="tel:+5411 5059 5098" class="py-3 text-light border-bottom border-primary"><i
+                class="fas fa-phone-alt text-secondary me-2"></i> +5411 5059 5098</a>
+            <a href="mailto:info@togrow.com.ar" class="py-3 text-light border-bottom border-primary"><i
+                class="fas fa-envelope text-secondary me-2"></i> info@togrow.com.ar</a>
+          </div>
+        </div>
+      </div>
+      <hr class="text-light mt-5 mb-4">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <i class="fas fa-copyright me-2">
+            <span class="text-light"><a href="#" class="text-secondary"></i>ToGrow</a>, All right reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span class="text-light">Designed By <a href="#" class="text-secondary">ToGrow</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+
+  <!-- Back to Top -->
+  <a href="/#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+      class="fa fa-arrow-up text-white"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+
+</html>
