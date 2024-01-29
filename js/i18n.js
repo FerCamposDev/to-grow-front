@@ -16,11 +16,11 @@ function updateContent() {
 
   flagMobile.setAttribute('src', `/img/flags/${lang}.png`);
   flagDesktop.setAttribute('src', `/img/flags/${lang}.png`);
-  formName.setAttribute('placeholder', i18next.t('your_name'));
-  formProject.setAttribute('placeholder', i18next.t('project'));
-  formMsg.setAttribute('placeholder', i18next.t('message'));
+  formName?.setAttribute('placeholder', i18next.t('your_name'));
+  formProject?.setAttribute('placeholder', i18next.t('project'));
+  formMsg?.setAttribute('placeholder', i18next.t('message'));
   for (let i = 0; i < whatsappButtons.length; i++) {
-    whatsappButtons[i].setAttribute('href', i18next.t('whatsapp'));
+    whatsappButtons[i]?.setAttribute('href', i18next.t('whatsapp'));
   }
 
   const elements = document.getElementsByClassName("i18n");
@@ -32,7 +32,10 @@ function updateContent() {
 }
 
 async function i18Loader() {
-  const initialLang = localStorage.getItem('lang') || 'en';
+  let defaultLang = window.navigator.language.split('-')[0];
+
+  if (defaultLang !== 'es' && defaultLang !== 'en') defaultLang = 'en';
+  const initialLang = localStorage.getItem('lang') || defaultLang;
   const langs = ["en", "es"];
   const jsons = await Promise.all(
     langs.map((lang) => fetch("lang/" + lang + ".json").then((r) => r.json()))
