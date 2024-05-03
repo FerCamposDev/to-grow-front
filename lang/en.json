@@ -3,6 +3,7 @@
   "note": "Note : We help you to Grow your Business",
   "home": "Home",
   "about": "About",
+  "team": "Team",
   "testimonial": "Testimonial",
   "services": "Services",
   "contact": "Contact",
@@ -34,6 +35,10 @@
     "desc1": "We are a specialist software development company, with a focus on providing high quality, customized solutions to our clients. We offer a wide range of development services, from web and mobile applications to desktop software development and business process automation.",
     "desc2": "With an agile approach and commitment to excellence, we specialize in creating digital experiences that drive business to success. We collaborate closely with clients of all sizes, delivering innovative products and automating processes to optimize operational efficiency.",
     "desc3": "Join us on the journey to digital transformation, where our software solutions take businesses to the next level with exceptional results."
+  },
+  "team_section": {
+    "header": "Our Team",
+    "title": "Meet our Team"
   },
   "services_section": {
     "header": "Our Services",
