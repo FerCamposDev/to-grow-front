@@ -6,7 +6,7 @@ type Props = {}
 const NavigationBar = (props: Props) => {
   return (
     <div className='bg-black'>
-      <div className="container mx-auto">
+      <div className="container mx-5 lg:mx-auto">
         <nav className="flex items-center justify-between py-2">
           <a href="/index.html" className="flex items-center ">
             <Image src="/img/favicon/android-chrome-192x192.png" alt="logo" width={50} height={50} />
