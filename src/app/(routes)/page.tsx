@@ -1,6 +1,7 @@
 import NavigationBar from "../components/navigation/NavigationBar";
 import AboutUs from "../components/sections/AboutUs";
 import HomeCarousel from "../components/sections/HomeCarousel";
+import OurServices from "../components/sections/OurServices";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <NavigationBar />
       <HomeCarousel />
       <AboutUs />
+      <OurServices />
     </main>
   );
 }

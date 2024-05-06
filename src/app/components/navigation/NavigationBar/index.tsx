@@ -5,7 +5,7 @@ type Props = {}
 
 const NavigationBar = (props: Props) => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black text-white'>
       <div className="container mx-5 lg:mx-auto">
         <nav className="flex items-center justify-between py-2">
           <a href="/index.html" className="flex items-center ">
