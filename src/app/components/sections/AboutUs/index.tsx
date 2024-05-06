@@ -34,9 +34,9 @@ const AboutUs = (props: Props) => {
             <h5 data-i18n="about_section.header" className="text-primary text-2xl font-bold">
               About Us
             </h5>
-            <h1 data-i18n="about_section.title" className="mb-4 text-black text-4xl font-semibold">
+            <h6 data-i18n="about_section.title" className="mb-4 text-black text-4xl font-semibold">
               About ToGrow And It&apos;s Innovative IT Solutions
-            </h1>
+            </h6>
             <p data-i18n="about_section.desc1" className='text-gray-500'>
               We are a specialist software development company, with a focus on providing high quality, customized
               solutions to our clients. We offer a wide range of development services, from web and mobile applications to

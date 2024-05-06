@@ -11,9 +11,9 @@ const OurServices = (props: Props) => {
           <h5 className="font-semibold text-primary text-xl">
             Our Services
           </h5>
-          <h1 className="font-semibold text-4xl">
+          <h6 className="font-semibold text-4xl">
             Services Built Specifically For Your Business
-          </h1>
+          </h6>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           <div className="services-item col shadow-xl p-6">
