@@ -5,6 +5,7 @@ import ContactUs from "../components/sections/ContactUs";
 import HomeCarousel from "../components/sections/HomeCarousel";
 import OurServices from "../components/sections/OurServices";
 import OurTeam from "../components/sections/OurTeam";
+import FloatingBackToTop from "../components/shared/FloatingBackToTop";
 import FloatingWhatsapp from "../components/shared/FloatingWhatsapp";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <OurTeam />
         <ContactUs />
         
+        <FloatingBackToTop />
         <FloatingWhatsapp />
       </main>
       <Footer />
