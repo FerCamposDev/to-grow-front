@@ -24,7 +24,7 @@ const NavigationBar = (props: Props) => {
             </div>
           </div>
           <div className="hidden lg:flex items-center">
-            <div className="flex items-center justify-center me-4">
+            <div className="flex items-center justify-center me-4 animate-bounce">
               <a
                 target="_blank"
                 href="https://wa.me/+541150595098?text=Hello%20I'm%20interested%20in%20create%20a%20new%20project"
