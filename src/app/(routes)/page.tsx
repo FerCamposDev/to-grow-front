@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <NavigationBar /> {/* TODO: review little right margin */}
+        <NavigationBar />
         <HomeCarousel />
         <AboutUs />
         <OurServices />
