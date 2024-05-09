@@ -6,9 +6,9 @@ type Props = {}
 const AboutUs = (props: Props) => {
   return (
     <div id="about" className="py-32">
-      <div className='container mx-auto lg:px-48'>
-        <div className='grid grid-cols-12 gap-16'>
-          <div className='col-span-12 md:col-span-6 lg:col-span-5 h-100 flex justify-center'>
+      <div className='container mx-auto xl:px-48'>
+        <div className='flex flex-wrap md:flex-nowrap gap-10'>
+          <div className='w-full md:w-1/2 lg:w-5/12 h-100 flex justify-center'>
             <div className='h-100 flex justify-center items-center'>
               <div className="h-100 relative">
                 <Image
@@ -30,7 +30,7 @@ const AboutUs = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className='col-span-12 md:col-span-6 lg:col-span-7'>
+          <div className='w-full md:w-1/2 lg:w-7/12'>
             <h5 data-i18n="about_section.header" className="text-primary text-2xl font-bold">
               About Us
             </h5>
