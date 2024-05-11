@@ -1,10 +1,13 @@
 import React from 'react'
+import Carousel from './Carousel'
 
 type Props = {}
 
 const HomeCarousel = (props: Props) => {
   return (
-    <div>HomeCarousel</div>
+    <div className="container-fluid px-0">
+      <Carousel />
+    </div>
   )
 }
 
