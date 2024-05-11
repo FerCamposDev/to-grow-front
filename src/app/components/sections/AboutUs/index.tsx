@@ -31,25 +31,25 @@ const AboutUs = (props: Props) => {
             </div>
           </div>
           <div className='w-full md:w-1/2 lg:w-7/12'>
-            <h5 data-i18n="about_section.header" className="text-primary text-2xl font-bold">
+            <h5 className="text-primary text-2xl font-bold">
               About Us
             </h5>
-            <h6 data-i18n="about_section.title" className="mb-4 text-black text-4xl font-semibold">
+            <h6 className="mb-4 text-black text-4xl font-semibold">
               About ToGrow And It&apos;s Innovative IT Solutions
             </h6>
-            <p data-i18n="about_section.desc1" className='text-gray-500'>
+            <p className='text-gray-500'>
               We are a specialist software development company, with a focus on providing high quality, customized
               solutions to our clients. We offer a wide range of development services, from web and mobile applications to
               desktop software development and business process automation.
             </p>
             <br />
-            <p data-i18n="about_section.desc2" className='text-gray-500'>
+            <p className='text-gray-500'>
               With an agile approach and commitment to excellence, we specialize in creating digital
               experiences that drive business success. We collaborate closely with clients of all sizes, delivering
               innovative products and automating processes to optimize operational efficiency.
             </p>
             <br />
-            <p data-i18n="about_section.desc3" className="mb-4 text-gray-500">
+            <p className="mb-4 text-gray-500">
               Join us on the journey to
               digital transformation, where our software solutions take businesses to the next level with exceptional
               results.

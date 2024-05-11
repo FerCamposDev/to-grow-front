@@ -14,12 +14,12 @@ const NavigationBar = (props: Props) => {
           </a>
           <div className="hidden lg:block">
             <div className="navbar-collapse bg-transparent" id="navbarCollapse">
-              <div className="navbar-nav ms-auto p-0">
-                <a href="#" data-i18n="home" className="i18n nav-item text-secondary">Home</a>
-                <a href="#about" data-i18n="about" className="i18n nav-item ml-4">About</a>
-                <a href="#team" data-i18n="team" className="i18n nav-item ml-4">Team</a>
-                <a href="#services" data-i18n="services" className="i18n nav-item ml-4">Services</a>
-                <a href="#contact" data-i18n="contact" className="i18n nav-item ml-4">Contact</a>
+              <div className="flex gap-4 ms-auto p-0">
+                <a href="#" className="hover:text-primary">Home</a>
+                <a href="#about" className="hover:text-primary">About</a>
+                <a href="#team" className="hover:text-primary">Team</a>
+                <a href="#services" className="hover:text-primary">Services</a>
+                <a href="#contact" className="hover:text-primary">Contact</a>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ const NavigationBar = (props: Props) => {
               </a>
             </div>
             <div className="flex flex-col">
-              <span data-i18n="have_any_questions" className="i18n">Have any questions?</span>
+              <span>Have any questions?</span>
               <span className="text-secondary">+5411 5059 5098</span>
             </div>
           </div>
