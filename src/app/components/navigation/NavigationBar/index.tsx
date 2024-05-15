@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import NavigationMenu from './Menu'
 
 type Props = {}
 
@@ -12,17 +13,7 @@ const NavigationBar = (props: Props) => {
             <Image src="/img/favicon/android-chrome-192x192.png" alt="logo" width={50} height={50} />
             <h1 className="font-bold text-4xl">To<span className="text-secondary">Grow</span></h1>
           </a>
-          <div className="hidden lg:block">
-            <div className="navbar-collapse bg-transparent" id="navbarCollapse">
-              <div className="flex gap-4 ms-auto p-0">
-                <a href="#" className="hover:text-primary">Home</a>
-                <a href="#about" className="hover:text-primary">About</a>
-                <a href="#team" className="hover:text-primary">Team</a>
-                <a href="#services" className="hover:text-primary">Services</a>
-                <a href="#contact" className="hover:text-primary">Contact</a>
-              </div>
-            </div>
-          </div>
+          <NavigationMenu />
           <div className="hidden lg:flex items-center">
             <div className="flex items-center justify-center me-4 animate-bounce">
               <a
