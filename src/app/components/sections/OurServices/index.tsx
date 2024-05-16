@@ -6,7 +6,7 @@ type Props = {}
 const OurServices = (props: Props) => {
   return (
     <div id="services" className="services py-10">
-      <div className="container mx-auto">
+      <div className="container px-2 mx-auto">
         <div className="text-center pb-10 max-w-xl mx-auto">
           <h5 className="font-semibold text-primary text-xl">
             Our Services

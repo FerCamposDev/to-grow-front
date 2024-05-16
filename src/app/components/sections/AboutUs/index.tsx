@@ -6,7 +6,7 @@ type Props = {}
 const AboutUs = (props: Props) => {
   return (
     <div id="about" className="py-32">
-      <div className='container mx-auto xl:px-48'>
+      <div className='container px-4 mx-auto xl:px-48'>
         <div className='flex flex-wrap md:flex-nowrap gap-10'>
           <div className='w-full md:w-1/2 lg:w-5/12 h-100 flex justify-center'>
             <div className='h-100 flex justify-center items-center'>

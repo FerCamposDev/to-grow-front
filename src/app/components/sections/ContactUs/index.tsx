@@ -10,7 +10,7 @@ const ContactUs = (props: Props) => {
       <div className="container mx-auto">
         <SectionTitle title='Get In Touch' description='Contact us for any questions'>
           <div className='text-gray-500'>
-            <p className="mt-5 mb-0">
+            <p className="mt-5 mb-0 px-2">
               We&apos;re here to assist you with any inquiries you may have. Whether you&apos;re interested in our software
               development services, have questions about a specific project, or just want to say hello, feel free to reach
               out to us using the form below.

@@ -7,7 +7,7 @@ type Props = {}
 const OurTeam = (props: Props) => {
   return (
     <div id="team" className="team bg-gray-100 py-10">
-      <div className="container mx-auto">
+      <div className="container px-2 mx-auto">
         <div className="text-center pb-5 max-w-xl mx-auto">
           <h5 className="font-semibold text-primary text-xl">Our Team</h5>
           <h6 className="font-semibold text-4xl">
