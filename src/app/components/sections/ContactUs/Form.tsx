@@ -6,7 +6,7 @@ const Form = () => {
   if (state.succeeded) {
     return (
       <div className="h-full w-full rounded flex flex-col justify-center items-center py-5 md:p-5">
-        <h4 className="text-center">
+        <h4 className="text-center text-2xl font-semibold">
           Thank you for reaching out!
         </h4>
         <h6 className="text-center p-2 md:p-5">
@@ -19,7 +19,7 @@ const Form = () => {
   if (state.errors) {
     return (
       <div className="h-full w-full rounded flex flex-col justify-center items-center py-5 md:p-5">
-        <h4 className="text-center text-red-500">
+        <h4 className="text-center text-red-500 text-2xl font-semibold">
           Sorry! It seems there was an issue submitting the form.
         </h4>
         <h6 className="text-center p-2 md:p-5">
