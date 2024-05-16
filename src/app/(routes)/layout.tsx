@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import NavigationBar from "../components/navigation/NavigationBar";
+import Footer from "../components/footer";
+import FloatingBackToTop from "../components/shared/FloatingBackToTop";
+import FloatingWhatsapp from "../components/shared/FloatingWhatsapp";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +35,13 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavigationBar />
+        {children}
+        <FloatingWhatsapp />
+        <FloatingBackToTop />
+        <Footer />
+      </body>
     </html>
   );
 }
