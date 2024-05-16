@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import NavigationBar from "../components/navigation/NavigationBar";
-import Footer from "../components/footer";
-import FloatingBackToTop from "../components/shared/FloatingBackToTop";
-import FloatingWhatsapp from "../components/shared/FloatingWhatsapp";
+import NavigationBar from "./components/navigation/NavigationBar";
+import Footer from "./components/footer";
+import FloatingBackToTop from "./components/shared/FloatingBackToTop";
+import FloatingWhatsapp from "./components/shared/FloatingWhatsapp";
 
 import "./globals.css";
 
