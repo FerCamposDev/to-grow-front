@@ -1,13 +1,13 @@
 const PoliciesPage = () => {
   return (
     <main>
-      <div className="container px-3 my-10">
+      <div className="container mx-auto px-3 my-10">
         <div className="flex justify-center">
           <div className="w-full lg:w-10/12">
             <h1 className="font-bold text-2xl text-black mb-7">Políticas de Privacidad</h1>
 
             <div className="flex flex-col items-start justify-start col-span-12">
-              <div className="text-sm text-gray-600">
+              <div className="text-sm text-gray-700">
                 <p>La presente Política de Privacidad establece los términos en que <strong>ToGrow</strong> utiliza y protege la información que es proporcionada por los usuarios al momento de utilizar su sitio web. Nuestra compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le solicitamos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
                 
                 <h4 className="font-bold text-xl text-black my-5">Información que es recopilada</h4>
