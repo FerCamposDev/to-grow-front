@@ -1,3 +1,7 @@
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'es' }]
+}
+
 const PoliciesPage = () => {
   return (
     <main>
