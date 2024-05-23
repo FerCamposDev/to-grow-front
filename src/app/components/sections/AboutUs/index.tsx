@@ -1,14 +1,9 @@
 'use client'
-import { dictionary } from '@/i18n';
-import { LangProps } from '@/types/lang';
+import { useParamsLangWordings } from '@/hooks/useParamsLangWordings';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
 
-type Props = {}
-
-const AboutUs = (props: Props) => {
-  const { lang } = useParams<LangProps>();
-  const wordings = dictionary[lang];
+const AboutUs = () => {
+  const { wordings } = useParamsLangWordings();
 
   return (
     <div id="about" className="py-32">
@@ -44,21 +39,15 @@ const AboutUs = (props: Props) => {
               {wordings.about_section.title}
             </h6>
             <p className='text-gray-500'>
-              We are a specialist software development company, with a focus on providing high quality, customized
-              solutions to our clients. We offer a wide range of development services, from web and mobile applications to
-              desktop software development and business process automation.
+              {wordings.about_section.desc1}
             </p>
             <br />
             <p className='text-gray-500'>
-              With an agile approach and commitment to excellence, we specialize in creating digital
-              experiences that drive business success. We collaborate closely with clients of all sizes, delivering
-              innovative products and automating processes to optimize operational efficiency.
+              {wordings.about_section.desc2}
             </p>
             <br />
             <p className="mb-4 text-gray-500">
-              Join us on the journey to
-              digital transformation, where our software solutions take businesses to the next level with exceptional
-              results.
+              {wordings.about_section.desc3}
             </p>
           </div>
         </div>
