@@ -1,15 +1,18 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
 import NavigationMenu from './Menu'
+import { useClientLang } from '@/hooks/useClientLang'
 
 type Props = {}
 
 const NavigationBar = (props: Props) => {
+  const { homePath } = useClientLang();
+
   return (
     <div className='bg-gray-900 text-white'>
       <div className="container px-5 lg:mx-auto">
         <nav className="flex items-center justify-between py-2">
-          <a href="/" className="flex items-center ">
+          <a href={homePath} className="flex items-center ">
             <Image src="/img/favicon/android-chrome-192x192.png" alt="logo" width={50} height={50} />
             <h1 className="font-bold text-4xl">To<span className="text-secondary">Grow</span></h1>
           </a>

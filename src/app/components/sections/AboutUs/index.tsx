@@ -1,9 +1,15 @@
+'use client'
+import { dictionary } from '@/i18n';
+import { LangProps } from '@/types/lang';
 import Image from 'next/image';
-import React from 'react'
+import { useParams } from 'next/navigation';
 
 type Props = {}
 
 const AboutUs = (props: Props) => {
+  const { lang } = useParams<LangProps>();
+  const wordings = dictionary[lang];
+
   return (
     <div id="about" className="py-32">
       <div className='container px-4 mx-auto xl:px-48'>
@@ -32,10 +38,10 @@ const AboutUs = (props: Props) => {
           </div>
           <div className='w-full md:w-1/2 lg:w-7/12'>
             <h5 className="text-primary text-2xl font-bold">
-              About Us
+              {wordings.about_section.header}
             </h5>
             <h6 className="mb-4 text-black text-4xl font-semibold">
-              About ToGrow And It&apos;s Innovative IT Solutions
+              {wordings.about_section.title}
             </h6>
             <p className='text-gray-500'>
               We are a specialist software development company, with a focus on providing high quality, customized

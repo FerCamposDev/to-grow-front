@@ -1,0 +1,105 @@
+{
+  "title": "ToGrow - IT Solutions",
+  "description": "We are a specialized software development company, providing tailor-made solutions to meet the specific needs of your business. From web and mobile applications to enterprise software, our team of programming and technological innovation experts is ready to propel your business into the future. Discover how we can turn your ideas into digital realities today.",
+  "note": "Note : We help you to Grow your Business",
+  "home": "Home",
+  "about": "About",
+  "team": "Team",
+  "testimonial": "Testimonial",
+  "services": "Services",
+  "contact": "Contact",
+  "have_any_questions": "Have any questions?",
+  "carousel_1": {
+    "header": "Drive Your Success",
+    "title": "Tailored Software Solutions",
+    "desc": "We offer advanced software solutions to drive your business growth, blending quality and customization at the forefront of technology."
+  },
+  "carousel_2": {
+    "header": "Strategic Partners",
+    "title": "Overcoming Technological Challenges",
+    "desc": "We turn technological challenges into opportunities for success. We are your strategic partners, committed to excellence and exceptional service."
+  },
+  "carousel_3": {
+    "header": "Unparalleled Experience",
+    "title": "Premium Customer Care",
+    "desc": "We stand out with exceptional customer care, overcoming technological barriers to ensure your success. Discover a unique experience with us."
+  },
+  "statistics": {
+    "1": "Success in getting happy customer",
+    "2": "Thousands of successful business",
+    "3": "Total clients who love ToGrow",
+    "4": "Stars reviews given by satisfied clients"
+  },
+  "about_section": {
+    "header": "About Us",
+    "title": "About ToGrow And Its Innovative IT Solutions",
+    "desc1": "We are a specialist software development company, with a focus on providing high quality, customized solutions to our clients. We offer a wide range of development services, from web and mobile applications to desktop software development and business process automation.",
+    "desc2": "With an agile approach and commitment to excellence, we specialize in creating digital experiences that drive business to success. We collaborate closely with clients of all sizes, delivering innovative products and automating processes to optimize operational efficiency.",
+    "desc3": "Join us on the journey to digital transformation, where our software solutions take businesses to the next level with exceptional results."
+  },
+  "team_section": {
+    "header": "Our Team",
+    "title": "Meet our Team"
+  },
+  "services_section": {
+    "header": "Our Services",
+    "title": "Services Built Specifically For Your Business",
+    "web_design": "Web Design",
+    "web_design_desc": "Web design goes beyond aesthetics; it's about crafting captivating experiences that reflect your brand identity. From visual layout to intuitive navigation, our web design approach aims to turn visitors into customers, leaving a lasting impression.",
+    "web_development": "Web Development",
+    "web_development_desc": "Not only do we create websites but also solutions that drive user interaction. From speed optimization to mobile adaptability, we ensure every aspect of your site functionality as well as user engagement and loyalty.",
+    "ui_design": "UI/UX Design",
+    "ui_design_desc": "UX/UI design is about connecting emotionally with your potential clients. Our experiences are not only visually appealing (UI) but also provide an immersive narrative (UX). Each interaction is strategically designed to the user loyalty.",
+    "web_security": "Web Security",
+    "web_security_desc": "Cybersecurity ensures customer trust. By proactively protecting valuable information, we convey an image of a secure brand committed to privacy. Your security is our priority to build lasting relationships with your customers.",
+    "digital_marketing": "Digital Marketing",
+    "digital_marketing_desc": "In the digital sphere, marketing is the key to stand out. From search engine optimization (SEO) to crafting impactful social media campaigns. Our digital marketing approach encourages to online visibility and turns clicks into conversions.",
+    "app_development": "App Development",
+    "app_development_desc": "We develop applications that not only fulfill needs but create memorable experiences. From mobile apps that streamline daily life to customized solutions, our app development approach focuses on positive impact and user loyalty."
+  },
+  "testimonial_section": {
+    "header": "Our Testimonial",
+    "title": "Our Clients Saying!",
+    "maria": {
+      "name": "Maria Rodriguez",
+      "profession": "Southern Financial Services",
+      "desc": "Incredible experience working with ToGrow! Their software development team exceeded our expectations at Southern Financial Services. They met deadlines and delivered a final product of high quality. Communication was smooth and transparent throughout. I would definitely recommend ToGrow's services to any company seeking reliable and efficient technological solutions."
+    }
+  },
+  "contact_section": {
+    "header": "Get In Touch",
+    "title": "Contact us for any questions",
+    "desc1": "We're here to assist you with any inquiries you may have. Whether you're interested in our software development services, have questions about a specific project, or just want to say hello, feel free to reach out to us using the form below.",
+    "desc2": "Your satisfaction is our priority, and we look forward to hearing from you!"
+  },
+  "address": "Address",
+  "call_us": "Call Us",
+  "email_us": "Email Us",
+  "your_name": "Your name",
+  "your_email": "Email",
+  "project": "Project",
+  "message": "Message",
+  "send_message": "Send Message",
+  "contact_success": {
+    "title": "Thank you for reaching out!",
+    "desc": "We're excited to receive your message, and our team will review it shortly. We'll be in touch soon to discuss how we can assist you!"
+  },
+  "contact_error": {
+    "title": "Sorry! It seems there was an issue submitting the form.",
+    "desc": "Please try again or reach out to us directly at info@togrow.com.ar so we can assist you promptly.  Thank you for your understanding!"
+  },
+  "short_link": "Short Link",
+  "about_us": "About us",
+  "our_services": "Our Services",
+  "our_testimonials": "Our Testimonials",
+  "contact_us": "Contact us",
+  "help_link": "Help Link",
+  "terms": "Terms of use",
+  "privacy": "Privacy Policy",
+  "404": {
+    "title": "Page Not Found",
+    "desc": "We’re sorry, the page you have looked for does not exist in our website!",
+    "button": "Go Back To Home"
+  },
+  "whatsapp": "https://wa.me/+541150595098?text=Hello%20I'm%20interested%20in%20create%20a%20new%20project"
+}
