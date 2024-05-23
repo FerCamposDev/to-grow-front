@@ -3,9 +3,7 @@ import { useClientLang } from "@/hooks/useClientLang"
 import { useParamsLangWordings } from "@/hooks/useParamsLangWordings"
 import Image from "next/image"
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   const { wordings } = useParamsLangWordings();
   const { lang, homePath } = useClientLang();
 
