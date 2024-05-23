@@ -5,16 +5,19 @@ import Footer from "../components/footer";
 import FloatingBackToTop from "../components/shared/FloatingBackToTop";
 import FloatingWhatsapp from "../components/shared/FloatingWhatsapp";
 
-import { LangProps } from "@/types/lang";
-import { LANGS } from "@/i18n";
+import { LangParams, LangProps } from "@/types/lang";
+import { LANGS, dictionary } from "@/i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "ToGrow - IT Solutions",
-  description: "We are a specialized software development company, providing tailor-made solutions to meet the specific needs of your business. From web and mobile applications to enterprise software, our team of programming and technological innovation experts is ready to propel your business into the future. Discover how we can turn your ideas into digital realities today.",
-  keywords: ['software development', 'custom applications', 'enterprise solutions', 'web development', 'bespoke programming', 'software design', 'technology consulting', 'business software', 'mobile development', 'technological innovation']
-};
+export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
+  const wordings = dictionary[params.lang || 'es'];
+  return {
+    title: wordings.title,
+    description: wordings.description,
+    keywords: ['software development', 'custom applications', 'enterprise solutions', 'web development', 'bespoke programming', 'software design', 'technology consulting', 'business software', 'mobile development', 'technological innovation']
+  }
+}
 
 export async function generateStaticParams() {
   return LANGS.map(lang => ({ lang }));
