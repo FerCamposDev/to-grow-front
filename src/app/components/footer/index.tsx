@@ -1,14 +1,18 @@
+'use client'
+import { useClientLang } from "@/hooks/useClientLang"
 import Image from "next/image"
 
 type Props = {}
 
 const Footer = (props: Props) => {
+  const { lang, homePath } = useClientLang();
+
   return (
     <footer className="bg-gray-900">
       <div className="container mx-auto py-5 px-4 md:px-auto ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5 justify-between">
           <div className="col-lg-3 col-md-6">
-            <a href="/" className="flex items-center">
+            <a href={homePath} className="flex items-center">
               <Image src="/img/favicon/android-chrome-192x192.png" alt="logo" height={50} width={50} />
               <h1 className="text-white font-bold text-4xl ml-2">To<span className="text-secondary">Grow</span></h1>
             </a>
@@ -26,18 +30,18 @@ const Footer = (props: Props) => {
           <div className="col-lg-3 col-md-6">
             <span className="text-secondary text-2xl font-semibold">Short Link</span>
             <div className="mt-4">
-              <a href="/#" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Home</a>
-              <a href="/#about" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>About us</a>
-              <a href="/#team" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Our Team</a>
-              <a href="/#services" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
-              <a href="/#contact" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+              <a href={`/${lang}#`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Home</a>
+              <a href={`/${lang}#about`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>About us</a>
+              <a href={`/${lang}#team`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Our Team</a>
+              <a href={`/${lang}#services`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+              <a href={`/${lang}#contact`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
             <span className="text-secondary text-2xl font-semibold">Help Link</span>
             <div className="mt-4">
-              <a href="/terms" target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Terms of use</a>
-              <a href="/policies" target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+              <a href={`/${lang}/terms`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Terms of use</a>
+              <a href={`/${lang}/policies`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
@@ -54,13 +58,13 @@ const Footer = (props: Props) => {
           <div className="text-center md:text-left">
             <i className="fas fa-copyright text-gray-300 mr-2"></i>
             <span className="text-gray-200">
-              <a href="/" className="text-white font-semibold">To<span className="text-secondary">Grow</span></a>
+              <a href={homePath} className="text-white font-semibold">To<span className="text-secondary">Grow</span></a>
               , All right reserved.
             </span>
           </div>
           <div className="text-center md:text-right">
             <span className="text-gray-300">Designed By
-              <a href="/" className="text-white font-semibold ml-1">To<span className="text-secondary">Grow</span></a>
+              <a href={homePath} className="text-white font-semibold ml-1">To<span className="text-secondary">Grow</span></a>
             </span>
           </div>
         </div>
