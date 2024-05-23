@@ -1,7 +1,3 @@
-export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'es' }]
-}
-
 const TermsAndConditions = () => {
   return (
     <div className="container mx-auto px-3 my-10 mb-32">

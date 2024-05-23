@@ -4,10 +4,6 @@ import HomeCarousel from "../components/sections/HomeCarousel";
 import OurServices from "../components/sections/OurServices";
 import OurTeam from "../components/sections/OurTeam";
 
-export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'es' }]
-}
-
 export default function Home() {
   return (
     <main>
