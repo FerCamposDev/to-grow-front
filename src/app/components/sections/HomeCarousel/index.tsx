@@ -1,12 +1,11 @@
 import React from 'react'
 import Carousel from './Carousel'
+import { LangProps } from '@/types/lang'
 
-type Props = {}
-
-const HomeCarousel = (props: Props) => {
+const HomeCarousel = ({ lang }: LangProps) => {
   return (
     <div className="container-fluid px-0">
-      <Carousel />
+      <Carousel lang={lang} />
     </div>
   )
 }

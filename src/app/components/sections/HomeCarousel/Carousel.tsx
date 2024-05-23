@@ -3,10 +3,12 @@ import Slider from "react-slick";
 import CarouselItem from "./CarouselItem";
 
 import './custom-slick.css';
+import { LangProps } from "@/types/lang";
+import { dictionary } from "@/i18n";
 
-type Props = {}
+const Carousel = ({ lang }: LangProps) => {
+  const wordings = dictionary[lang];
 
-const Carousel = (props: Props) => {
   return (
     <Slider
       dots
@@ -20,23 +22,23 @@ const Carousel = (props: Props) => {
       <CarouselItem
         image="/img/home/1.jpg"
         alt="First slide"
-        title="Drive Your Success"
-        subtitle="Tailored Software Solutions"
-        description="We offer advanced software solutions to drive your business growth, blending quality and customization at the forefront of technology."
+        title={wordings.carousel_1.header}
+        subtitle={wordings.carousel_1.title}
+        description={wordings.carousel_1.desc}
       />
       <CarouselItem
         image="/img/home/3.jpeg"
         alt="Second slide"
-        title="Strategic Partners"
-        subtitle="Overcoming Technological Challenges"
-        description="We turn technological challenges into opportunities for success. We are your strategic partners, committed to excellence and exceptional service."
+        title={wordings.carousel_2.header}
+        subtitle={wordings.carousel_2.title}
+        description={wordings.carousel_2.desc}
       />
       <CarouselItem
         image="/img/home/2.jpg"
         alt="Third Slide"
-        title="Unparalleled Experience"
-        subtitle="Premium Customer Care"
-        description="We stand out with exceptional customer care, overcoming technological barriers to ensure your success. Discover a unique experience with us."
+        title={wordings.carousel_3.header}
+        subtitle={wordings.carousel_3.title}
+        description={wordings.carousel_3.desc}
       />
     </Slider>
   );
