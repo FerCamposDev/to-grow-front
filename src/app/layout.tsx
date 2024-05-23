@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "ToGrow - IT Solutions",
   description: "We are a specialized software development company, providing tailor-made solutions to meet the specific needs of your business. From web and mobile applications to enterprise software, our team of programming and technological innovation experts is ready to propel your business into the future. Discover how we can turn your ideas into digital realities today.",
+  // keywords: [''] TODO: complete keywords
 };
 
 export default function RootLayout({
