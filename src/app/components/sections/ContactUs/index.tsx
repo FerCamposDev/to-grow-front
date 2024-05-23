@@ -1,22 +1,21 @@
-import React from 'react'
+'use client'
 import SectionTitle from '../../shared/SectionTitle'
 import Form from './Form'
+import { useParamsLangWordings } from '@/hooks/useParamsLangWordings'
 
-type Props = {}
+const ContactUs = () => {
+  const { wordings } = useParamsLangWordings();
 
-const ContactUs = (props: Props) => {
   return (
     <div id="contact" className="bg-gray-100 py-10">
       <div className="container mx-auto">
-        <SectionTitle title='Get In Touch' description='Contact us for any questions'>
+        <SectionTitle title={wordings.contact_section.header} description={wordings.contact_section.title}>
           <div className='text-gray-500'>
             <p className="mt-5 mb-0 px-2">
-              We&apos;re here to assist you with any inquiries you may have. Whether you&apos;re interested in our software
-              development services, have questions about a specific project, or just want to say hello, feel free to reach
-              out to us using the form below.
+              {wordings.contact_section.desc1}
             </p>
             <p className="mb-5">
-              Your satisfaction is our priority, and we look forward to hearing from you!
+              {wordings.contact_section.desc2}
             </p>
           </div>
         </SectionTitle>
@@ -28,7 +27,7 @@ const ContactUs = (props: Props) => {
                   <i className="fas fa-map-marker-alt text-white text-3xl"></i>
                 </div>
                 <div className="ml-3">
-                  <h4 className="text-primary text-2xl font-semibold">Address</h4>
+                  <h4 className="text-primary text-2xl font-semibold">{wordings.address}</h4>
                   <a href="https://maps.app.goo.gl/9HLdX3aV1kiakx3i6" target="_blank" className="text-sm font-semibold">RP2 KM 70, Buenos Aires</a>
                 </div>
               </div>
@@ -39,7 +38,7 @@ const ContactUs = (props: Props) => {
                   <i className="fa fa-phone text-white text-3xl"></i>
                 </div>
                 <div className="ml-3">
-                  <h4 className="text-primary text-2xl font-semibold">Call Us</h4>
+                  <h4 className="text-primary text-2xl font-semibold">{wordings.call_us}</h4>
                   <a href="tel:+5411 5059 5098" target="_blank" className="text-sm font-semibold">+5411 5059 5098</a>
                 </div>
               </div>
@@ -50,7 +49,7 @@ const ContactUs = (props: Props) => {
                   <i className="fa fa-envelope text-white text-3xl"></i>
                 </div>
                 <div className="ml-3">
-                  <h4 className="text-primary text-2xl font-semibold">Email Us</h4>
+                  <h4 className="text-primary text-2xl font-semibold">{wordings.email_us}</h4>
                   <a href="mailto:info@togrow.com.ar" target="_blank" className="text-sm font-semibold">info@togrow.com.ar</a>
                 </div>
               </div>
@@ -64,7 +63,7 @@ const ContactUs = (props: Props) => {
               </div>
             </div>
 
-            <div style={{ minHeight: '50vh '}}>
+            <div style={{ minHeight: '50vh ' }}>
               <Form />
             </div>
           </div>

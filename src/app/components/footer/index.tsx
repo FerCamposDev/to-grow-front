@@ -1,10 +1,10 @@
 'use client'
 import { useClientLang } from "@/hooks/useClientLang"
+import { useParamsLangWordings } from "@/hooks/useParamsLangWordings"
 import Image from "next/image"
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
+  const { wordings } = useParamsLangWordings();
   const { lang, homePath } = useClientLang();
 
   return (
@@ -28,24 +28,24 @@ const Footer = (props: Props) => {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <span className="text-secondary text-2xl font-semibold">Short Link</span>
+            <span className="text-secondary text-2xl font-semibold">{wordings.short_link}</span>
             <div className="mt-4">
-              <a href={`/${lang}#`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Home</a>
-              <a href={`/${lang}#about`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>About us</a>
-              <a href={`/${lang}#team`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Our Team</a>
-              <a href={`/${lang}#services`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
-              <a href={`/${lang}#contact`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+              <a href={`/${lang}#`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.home}</a>
+              <a href={`/${lang}#about`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.about_us}</a>
+              <a href={`/${lang}#team`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.our_team}</a>
+              <a href={`/${lang}#services`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.our_services}</a>
+              <a href={`/${lang}#contact`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.contact_us}</a>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <span className="text-secondary text-2xl font-semibold">Help Link</span>
+            <span className="text-secondary text-2xl font-semibold">{wordings.help_link}</span>
             <div className="mt-4">
-              <a href={`/${lang}/terms`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Terms of use</a>
-              <a href={`/${lang}/policies`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+              <a href={`/${lang}/terms`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.terms}</a>
+              <a href={`/${lang}/policies`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.privacy}</a>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <a href="#contact" className="text-secondary text-2xl font-semibold">Contact Us</a>
+            <a href="#contact" className="text-secondary text-2xl font-semibold">{wordings.contact_us}</a>
             <div className="mt-4">
               <a href="https://maps.app.goo.gl/9HLdX3aV1kiakx3i6" target="_blank" className="py-2 flex items-center border-b border-gray-700 text-gray-300"><i className="fas fa-map-marker-alt text-secondary me-2"></i> RP2 KM 70, Buenos Aires</a>
               <a href="tel:+5411 5059 5098" className="py-2 flex items-center border-b border-gray-700 text-gray-300"><i className="fas fa-phone-alt text-secondary me-2"></i> +5411 5059 5098</a>

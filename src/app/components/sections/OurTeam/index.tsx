@@ -1,17 +1,19 @@
-import React from 'react'
+'use client'
 import Image from 'next/image'
+import { useParamsLangWordings } from '@/hooks/useParamsLangWordings';
+
 import './our-team.css';
 
-type Props = {}
+const OurTeam = () => {
+  const { wordings } = useParamsLangWordings();
 
-const OurTeam = (props: Props) => {
   return (
     <div id="team" className="team bg-gray-100 py-10">
       <div className="container px-2 mx-auto">
         <div className="text-center pb-5 max-w-xl mx-auto">
-          <h5 className="font-semibold text-primary text-xl">Our Team</h5>
+          <h5 className="font-semibold text-primary text-xl">{wordings.team_section.header}</h5>
           <h6 className="font-semibold text-4xl">
-            Meet our expert Team
+            {wordings.team_section.title}
           </h6>
         </div>
         <div className='flex flex-wrap justify-center gap-10'>
@@ -57,7 +59,7 @@ const OurTeam = (props: Props) => {
                 </div>
                 <div className="team-name text-center py-3">
                   <h4 className="font-semibold text-2xl">Jacqueline Lozada</h4>
-                  <p className="text-gray-500">Co-Founder / Lawyer / Software QA</p>
+                  <p className="text-gray-500">Co-Founder / {wordings.team_section.lawyer} / Software QA</p>
                 </div>
                 <div className="flex justify-center pb-4">
                   <a
