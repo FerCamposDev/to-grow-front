@@ -47,7 +47,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <NavigationBar />
+        <NavigationBar lang={params.lang} />
         {children}
         <FloatingWhatsapp />
         <FloatingBackToTop />

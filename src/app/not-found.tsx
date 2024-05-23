@@ -16,7 +16,7 @@ export default function NotFound() {
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
       </head>
       <body>
-        <NavigationBar />
+        <NavigationBar lang={lang} />
         <div style={{ minHeight: '550px' }} className="container-fluid my-10 h-full flex justify-center items-center">
           <div className="container mx-auto text-center py-5 flex justify-center items-center">
             <div className="w-full lg:w-6/12 flex flex-col justify-center items-center gap-5">
