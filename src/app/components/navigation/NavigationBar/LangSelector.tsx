@@ -19,13 +19,13 @@ const LanguageSelector = () => {
 
   const handleSelection = (language: Lang) => {
     setSelectedLanguage(language);
+    setIsOpen(false);
 
     if (pathname.includes(`/${lang}`)) {
       return router.replace(pathname.replace(lang, language))
     }
 
     router.push(`/${lang}`);
-    setIsOpen(false);
   };
 
   return (
