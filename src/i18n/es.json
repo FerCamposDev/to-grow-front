@@ -33,7 +33,7 @@
   "about_section": {
     "header": "Sobre nosotros",
     "title": "Sobre ToGrow y sus soluciones innovadoras en IT",
-    "desc1": "Somos una empresa especializada de desarrollo de software, con un enfoque en proporcionar soluciones personalizadas de alta calidad a nuestros clientes. Ofrecemos una amplia gama de servicios de desarrollo, desde aplicaciones web y móviles hasta desarrollo de software de escritorio y automatización de procesos comerciales.",
+    "desc1": "Somos una empresa especializada en desarrollo de software, con un enfoque en proporcionar soluciones personalizadas de alta calidad a nuestros clientes. Ofrecemos una amplia gama de servicios de desarrollo, desde aplicaciones web y móviles hasta desarrollo de software de escritorio y automatización de procesos comerciales.",
     "desc2": "Con un enfoque ágil y un compromiso con la excelencia, nos especializamos en la creación de experiencias digitales que impulsan el éxito comercial. Colaboramos estrechamente con clientes de todos los tamaños, ofreciendo productos innovadores y automatizando procesos para optimizar la eficiencia operativa.",
     "desc3": "Únase a nosotros en el viaje a la transformación digital, donde nuestras soluciones de software llevan a las empresas al siguiente nivel con resultados excepcionales."
   },
@@ -48,15 +48,15 @@
     "web_design": "Diseño web",
     "web_design_desc": "El diseño web va más allá de la estética; se trata de elaborar experiencias cautivadoras que reflejen la identidad de su marca. Desde el diseño visual hasta la navegación intuitiva, nuestro enfoque de diseño web tiene como objetivo convertir a los visitantes en clientes, dejando una impresión duradera.",
     "web_development": "Desarrollo web",
-    "web_development_desc": "Con el desarrollo web, creamos no solo sitios web, sino también soluciones que impulsan la interacción del usuario. Desde la optimización de la velocidad hasta la adaptabilidad móvil, nos aseguramos de que cada aspecto de su sitio no solo funcione sino que impulse la participación y la retención del usuario.",
+    "web_development_desc": "Con el desarrollo web, creamos no solo sitios web, sino también soluciones que impulsan la interacción del usuario. Desde la optimización de la velocidad hasta la adaptabilidad móvil, nos aseguramos de que cada aspecto de su sitio no solo funcione, sino que impulse la participación y la retención del usuario.",
     "ui_design": "Diseño UI/UX",
-    "ui_design_desc": "El diseño de UX/UI se trata de conectarse emocionalmente con su audiencia. Creamos experiencias que no solo son visualmente atractivas (UI) sino que también proporcionan una narrativa inmersiva (UX). Cada interacción está estratégicamente diseñada para impulsar la lealtad del usuario.",
+    "ui_design_desc": "El diseño de UI/UX se trata de conectarse emocionalmente con su audiencia. Creamos experiencias que no solo son visualmente atractivas (UI) sino que también proporcionan una narrativa inmersiva (UX). Cada interacción está estratégicamente diseñada para impulsar la lealtad del usuario.",
     "web_security": "Seguridad web",
     "web_security_desc": "La ciberseguridad garantiza la confianza del cliente. Al proteger de manera proactiva la información valiosa, transmitimos una imagen de una marca segura comprometida con la privacidad. Su seguridad es nuestra prioridad para construir relaciones duraderas con sus clientes.",
     "digital_marketing": "Publicidad digital",
     "digital_marketing_desc": "En el ámbito digital, el marketing es la clave para destacarse. Desde la optimización de motores de búsqueda (SEO) hasta la elaboración de campañas de redes sociales impactantes, nuestro enfoque de marketing digital impulsa la visibilidad en línea y convierte los clics en conversiones.",
     "app_development": "Desarrollo de aplicaciones",
-    "app_development_desc": "Desarrollamos aplicaciones que no solo satisfacen las necesidades, sino que crean experiencias memorables. Desde aplicaciones móviles que racionalizan la vida diaria hasta soluciones personalizadas, nuestro enfoque de desarrollo de aplicaciones se centra en el impacto positivo y la lealtad del usuario."
+    "app_development_desc": "Desarrollamos aplicaciones que no solo satisfacen las necesidades, sino que crean experiencias memorables. Desde aplicaciones móviles que simplifican la vida diaria hasta soluciones personalizadas, nuestro enfoque de desarrollo de aplicaciones se centra en el impacto positivo y la lealtad del usuario."
   },
   "testimonial_section": {
     "header": "Nuestro testimonio",
@@ -71,7 +71,7 @@
     "header": "Póngase en contacto",
     "title": "Contáctenos para cualquier pregunta",
     "desc1": "Estamos aquí para ayudarlo con cualquier consulta que pueda tener. Ya sea que esté interesado en nuestros servicios de desarrollo de software, tenga preguntas sobre un proyecto específico o simplemente quiera saludar, no dude en comunicarse con nosotros utilizando el formulario a continuación.",
-    "desc2": "Su satisfacción es nuestra prioridad, ¡Esperamos tener noticias suyas!"
+    "desc2": "Su satisfacción es nuestra prioridad. ¡Esperamos tener noticias suyas!"
   },
   "address": "Dirección",
   "call_us": "Llámenos",
