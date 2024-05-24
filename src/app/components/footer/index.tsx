@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <a href="#contact" className="text-secondary text-2xl font-semibold">{wordings.contact_us}</a>
+            <a href={`/${lang}#contact`} className="text-secondary text-2xl font-semibold">{wordings.contact_us}</a>
             <div className="mt-4">
               <a href="https://maps.app.goo.gl/9HLdX3aV1kiakx3i6" target="_blank" className="py-2 flex items-center border-b border-gray-700 text-gray-300"><i className="fas fa-map-marker-alt text-secondary me-2"></i> RP2 KM 70, Buenos Aires</a>
               <a href="tel:+5411 5059 5098" className="py-2 flex items-center border-b border-gray-700 text-gray-300"><i className="fas fa-phone-alt text-secondary me-2"></i> +5411 5059 5098</a>
