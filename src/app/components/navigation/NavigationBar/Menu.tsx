@@ -23,11 +23,11 @@ const NavigationMenu = ({ lang }: LangProps) => {
 
 
       <div className={`absolute w-screen -mr-5 py-5 bg-gray-900 z-50 top-8 right-0 flex-col text-center gap-5 ${isOpen ? 'flex' : 'hidden'} lg:p-0 lg:w-auto lg:flex-row lg:static lg:flex lg:flex-wrap lg:items-center lg:ml-auto lg:mt-0 lg:mr-0 lg:top-auto lg:left-auto lg:overflow-visible`}>
-        <a href="#" onClick={toggleMenu} className="hover:text-primary">{wordings.home}</a>
-        <a href="#about" onClick={toggleMenu} className="hover:text-primary">{wordings.about}</a>
-        <a href="#team" onClick={toggleMenu} className="hover:text-primary">{wordings.team}</a>
-        <a href="#services" onClick={toggleMenu} className="hover:text-primary">{wordings.services}</a>
-        <a href="#contact" onClick={toggleMenu} className="hover:text-primary">{wordings.contact}</a>
+        <a href={`/${lang}#`} onClick={toggleMenu} className="hover:text-primary">{wordings.home}</a>
+        <a href={`/${lang}#about`} onClick={toggleMenu} className="hover:text-primary">{wordings.about}</a>
+        <a href={`/${lang}#team`} onClick={toggleMenu} className="hover:text-primary">{wordings.team}</a>
+        <a href={`/${lang}#services`} onClick={toggleMenu} className="hover:text-primary">{wordings.services}</a>
+        <a href={`/${lang}#contact`} onClick={toggleMenu} className="hover:text-primary">{wordings.contact}</a>
       </div>
     </div>
   );
