@@ -3,7 +3,7 @@ const PoliciesPage = () => {
     <main>
       <div className="container mx-auto px-3 my-10">
         <div className="flex justify-center">
-          <div className="w-full lg:w-10/12">
+          <div className="w-full lg:w-10/12 text-justify">
             <h1 className="font-bold text-2xl text-black mb-7">Políticas de Privacidad</h1>
 
             <div className="flex flex-col items-start justify-start col-span-12">
