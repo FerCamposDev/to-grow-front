@@ -2,7 +2,7 @@ const TermsAndConditions = () => {
   return (
     <div className="container mx-auto px-3 my-10 mb-32">
       <div className="flex justify-center">
-        <div className="w-full lg:w-10/12">
+        <div className="w-full lg:w-10/12 text-justify">
           <h1 className="font-bold text-2xl text-black mb-7">Términos y condiciones</h1>
           <div className="flex flex-col items-start justify-start col-span-12">
             <div className="text-sm text-gray-700 flex flex-col gap-4">
