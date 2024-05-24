@@ -1,0 +1,36 @@
+{
+  "title": "Privacy Policies",
+  "desc_part1": "This Privacy Policy sets out the terms under which ",
+  "desc_part2": " uses and protects the information provided by users when using its website. Our company is committed to the security of its users' data. When we ask you to fill in personal information fields by which you can be identified, we do so ensuring that it will only be used in accordance with the terms of this document. However, this Privacy Policy may change over time or be updated, so we recommend and emphasize continually reviewing this page to ensure that you agree with such changes.",
+  "info": {
+    "title": "Information Collected",
+    "desc": "Our website may collect personal information such as name, contact information, email address, or demographic information. Additionally, when necessary, specific information may be required to process an order or make a delivery or billing."
+  },
+  "use": {
+    "title": "Use of Collected Information",
+    "desc": "Our website uses the information in order to improve our products and services. Periodic emails may be sent through our site with special offers, new products, and other advertising information that we consider relevant to you or that may provide some benefit to you. These emails will be sent to the address you provide and may be canceled at any time.",
+    "desc2_part2": " is committed to keeping your information secure. We use advanced systems and update them frequently to ensure your data is safe."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "desc1": "A cookie refers to a file that is sent with the purpose of requesting permission to be stored on your computer. By accepting such a file, the cookie is created, and it then serves to have information regarding web traffic, and also facilitates future visits to our website.",
+    "desc2": "Another function of cookies is that they allow websites to recognize you individually and therefore provide you with the best personalized service from their website. Our website uses cookies to identify the pages that are visited and their frequency. This information is used solely for statistical analysis and then the information is permanently deleted.",
+    "desc3": "You can delete cookies at any time from your computer. However, cookies help provide a better service for websites; they do not give access to information from your computer or from you, unless you choose to provide it directly.",
+    "desc4": "You can accept or decline the use of cookies; however, most browsers automatically accept cookies as they serve to provide a better web service. You can also change your computer settings to decline cookies. If they are declined, you may not be able to use some of our services."
+  },
+  "visits": {
+    "title": "Visit Log",
+    "desc": "We use visit log services provided by digital advertising companies such as Google, Facebook, Twitter, and others to understand the characteristics of the audience that visits us and how they interact with our digital advertising. This information is managed directly on each platform and is used solely for the purpose of measuring advertising impact, which allows us to optimize our campaigns by offering our services to the audience that is most likely to be interested in our products and services."
+  },
+  "third_parties": {
+    "title": "Third Party Links",
+    "desc": "This website may contain links to other sites that may be of interest to you. Once you click on these links and leave our page, we no longer have control over the site to which you are redirected and therefore are not responsible for the terms or privacy or the protection of your data on those other third-party sites. These sites are subject to their own privacy policies, so it is advisable to check them to confirm that you agree with them."
+  },
+  "personal_info": {
+    "title": "Control of Your Personal Information",
+    "desc1": "At any time, you can restrict the collection or use of personal information provided to our website. Each time you are asked to fill out a form, you can check or uncheck the option to receive information by email. If you have marked the option to receive our newsletter or advertising, you can cancel it at any time.",
+    "desc2_part1": "This company will not sell, assign, or distribute the personal information collected without your consent unless required by a judge with a court order. ",
+    "desc2_part2": " reserves the right to change the terms of this Privacy Policy at any time.",
+    "desc3": "You can send your request for removal or the data we have about you by sending an email to "
+  }
+}

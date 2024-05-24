@@ -1,0 +1,33 @@
+{
+  "title": "Terms and Conditions",
+  "use": {
+    "title": "Use of the Site",
+    "desc": "You are authorized to use the ToGrow website to access the information, resources, and services provided for legitimate purposes and in accordance with these terms and conditions."
+  },
+  "property": {
+    "title": "Intellectual Property",
+    "desc": "All content and materials present on the website, including but not limited to texts, graphics, logos, images, videos, sounds, and software, are the property of ToGrow and are protected by intellectual property laws."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "desc": "Our privacy policy describes how we collect, use, and protect personal information. By using our site, you accept the practices described in our privacy policy."
+  },
+  "third_parties": {
+    "title": "Third Party Links",
+    "desc": "The ToGrow website may contain links to third-party websites. ToGrow is not responsible for the content or privacy practices of such sites. The inclusion of links does not necessarily imply an endorsement of them."
+  },
+  "responsibility": {
+    "title": "Limitation of Liability",
+    "desc": "ToGrow is not responsible for any loss, damage, or harm resulting from the use of this website. Use of the site is at your own risk."
+  },
+  "modifications": {
+    "title": "Modifications",
+    "desc": "We reserve the right to modify, update, or change these terms and conditions at any time without prior notice. Modifications will take effect immediately upon their publication on the site."
+  },
+  "law": {
+    "title": "Governing Law",
+    "desc": "These terms and conditions are governed by the laws of Argentina, and any dispute related to these terms will be resolved in the competent courts of the city of La Plata."
+  },
+  "last_desc": "By using our website, you agree to these terms and conditions. If you have any questions or concerns, please contact us at ",
+  "final": "Thank you for choosing ToGrow!"
+}
