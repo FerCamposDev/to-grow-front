@@ -4,6 +4,7 @@ import NavigationMenu from './Menu'
 import { useClientLang } from '@/hooks/useClientLang'
 import { LangProps } from '@/types/lang'
 import { dictionary } from '@/i18n'
+import LanguageSelector from './LangSelector'
 
 const NavigationBar = ({ lang }: LangProps) => {
   const { homePath } = useClientLang();
@@ -19,6 +20,9 @@ const NavigationBar = ({ lang }: LangProps) => {
           </a>
           <NavigationMenu lang={lang} />
           <div className="hidden lg:flex items-center">
+            <div className='mr-4'>
+              <LanguageSelector />
+            </div>
             <div className="flex items-center justify-center me-4 animate-bounce">
               <a
                 target="_blank"
