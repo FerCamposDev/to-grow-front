@@ -1,6 +1,7 @@
 'use client'
 import { useParamsLangWordings } from '@/hooks/useParamsLangWordings';
 import { useForm } from '@formspree/react';
+import Button from '../../shared/Button';
 
 const Form = () => {
   const [state, handleSubmit] = useForm('mleqdozv');
@@ -48,7 +49,7 @@ const Form = () => {
           <textarea id="form-msg" required className="form-control border-0 py-3 px-2 w-full rounded-lg" rows={6} cols={10} placeholder={wordings.message} name="message"></textarea>
         </label>
         <div className="text-right">
-          <button className="rounded-lg bg-primary hover:bg-opacity-90 shadow-lg text-white py-3 px-5" type="submit">{wordings.send_message}</button>
+          <Button type="submit">{wordings.send_message}</Button>
         </div>
       </div>
     </form>

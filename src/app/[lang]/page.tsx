@@ -4,6 +4,7 @@ import ContactUs from "../components/sections/ContactUs";
 import HomeCarousel from "../components/sections/HomeCarousel";
 import OurServices from "../components/sections/OurServices";
 import OurTeam from "../components/sections/OurTeam";
+import BlogSection from "../components/sections/Blog";
 
 export default function Home({ params }: LangParams) {
   const { lang = 'es' } = params;
@@ -12,8 +13,9 @@ export default function Home({ params }: LangParams) {
     <main>
       <HomeCarousel lang={lang} />
       <AboutUs />
-      <OurServices />
       <OurTeam />
+      <OurServices />
+      <BlogSection />
       <ContactUs />
     </main>
   );
