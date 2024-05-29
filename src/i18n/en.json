@@ -68,6 +68,11 @@
       "desc": "Incredible experience working with ToGrow! Their software development team exceeded our expectations at Southern Financial Services. They met deadlines and delivered a final product of high quality. Communication was smooth and transparent throughout. I would definitely recommend ToGrow's services to any company seeking reliable and efficient technological solutions."
     }
   },
+  "blog_section": {
+    "header": "Our Blog",
+    "title": "Latest Blog & News",
+    "view_all": "View all Posts"
+  },
   "contact_section": {
     "header": "Get In Touch",
     "title": "Contact us for any questions",

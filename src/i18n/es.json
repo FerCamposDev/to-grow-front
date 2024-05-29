@@ -68,6 +68,11 @@
       "desc": "¡Increíble experiencia trabajando con ToGrow! Su equipo de desarrollo de software superó nuestras expectativas en Servicios Financieros del Sur. Cumplieron con los plazos y entregaron un producto final de alta calidad. La comunicación fue fluida y transparente en todo momento. Definitivamente recomendaría los servicios de ToGrow a cualquier empresa que busque soluciones tecnológicas confiables y eficientes."
     }
   },
+  "blog_section": {
+    "header": "Nuestro Blog",
+    "title": "Últimos Post y Noticias",
+    "view_all": "Ver todos los posts"
+  },
   "contact_section": {
     "header": "Póngase en contacto",
     "title": "Contáctenos para cualquier pregunta",
