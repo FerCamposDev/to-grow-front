@@ -3,9 +3,10 @@ import Button from "../../shared/Button";
 import SectionTitle from "../../shared/SectionTitle"
 import PostCard from "./PostCard";
 import { getPosts } from "@/helpers/posts";
+import { LangProps } from "@/types/lang";
 
-const BlogSection = () => {
-  const posts = use(getPosts());
+const BlogSection = ({ lang }: LangProps) => {
+  const posts = use(getPosts(lang));
 
   return (
     <div id="blog" className="py-32">

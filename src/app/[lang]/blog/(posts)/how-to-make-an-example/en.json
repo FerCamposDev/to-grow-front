@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "title": "Post two",
+    "date": "2024-01-03T00:00:00Z",
+    "categories": ["rock"],
+    "image": "/img/home/1.jpg",
+    "description": "this is a description of two"
+  },
+  "content": "this is the content of the post"
+}

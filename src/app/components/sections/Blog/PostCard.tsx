@@ -17,9 +17,9 @@ const PostCard = ({ data }: Props) => {
   }
 
   return (
-    <div className="max-w-80 flex flex-col gap-4 rounded-md h-96 bg-gray-200 cursor-pointer hover:bg-gray-300 hover:opacity-90" onClick={handleClick}>
+    <div className="w-full max-w-80 flex flex-col gap-4 rounded-md h-96 bg-gray-200 cursor-pointer hover:bg-gray-300 hover:opacity-90" onClick={handleClick}>
       <div className="relative">
-        <Image className="rounded-t-md" src={data.image} alt="post image" width={350} height={230} />
+        <Image className="!relative rounded-t-md max-h-52" src={data.image} alt="post image" layout="fill" objectFit="cover" />
         <div className="absolute bottom-3 left-3 bg-primary rounded-md px-2 py-0.5">
           <h4 className="text-white">{data.title}</h4>
         </div>

@@ -15,7 +15,7 @@ export default function Home({ params }: LangParams) {
       <AboutUs />
       <OurTeam />
       <OurServices />
-      <BlogSection />
+      <BlogSection lang={lang} />
       <ContactUs />
     </main>
   );

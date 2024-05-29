@@ -5,7 +5,7 @@ import { use } from "react";
 
 export default function Home({ params }: LangParams) {
   const { lang = 'es' } = params;
-  const posts = use(getPosts());
+  const posts = use(getPosts(lang));
 
   return (
     <main>
