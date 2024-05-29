@@ -12,7 +12,7 @@ export default function Home({ params }: LangParams) {
       SHOW ALL POSTS HERE
 
       {posts.map((post) => (
-        <PostCard key={post.slug} data={post} />
+        <PostCard key={post.slug} data={post} lang={lang} />
       ))}
     </main>
   );

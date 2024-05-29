@@ -19,7 +19,7 @@ const BlogSection = ({ lang }: LangProps) => {
 
           <div className="flex justify-center gap-4">
             {posts.map((post) => (
-              <PostCard key={post.slug} data={post} />
+              <PostCard key={post.slug} data={post} lang={lang} />
             ))}
           </div>
 
