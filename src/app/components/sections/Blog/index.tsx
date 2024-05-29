@@ -1,10 +1,12 @@
+import { use } from "react";
 import Button from "../../shared/Button";
 import SectionTitle from "../../shared/SectionTitle"
-import BlogCard from "./BlogCard";
-
-const POST_IDS = ['1', '2', '3'];
+import PostCard from "./PostCard";
+import { getPosts } from "@/helpers/posts";
 
 const BlogSection = () => {
+  const posts = use(getPosts());
+
   return (
     <div id="blog" className="py-32">
       <div className="container px-4 mx-auto xl:px-48">
@@ -15,8 +17,8 @@ const BlogSection = () => {
           />
 
           <div className="flex justify-center gap-4">
-            {POST_IDS.map((id) => (
-              <BlogCard key={id} id={id} />
+            {posts.map((post) => (
+              <PostCard key={post.slug} data={post} />
             ))}
           </div>
 
