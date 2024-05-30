@@ -1,3 +1,4 @@
+import Header from "@/app/components/blog/Header";
 import PostCard from "@/app/components/sections/Blog/PostCard";
 import { getPosts } from "@/helpers/posts";
 import { LangParams } from "@/types/lang";
@@ -9,30 +10,25 @@ export default function Home({ params }: LangParams) {
 
   return (
     <main className="">
-      <div className="relative" style={{ backgroundImage: "url('/img/blog/background2.jpg')" }}>
-        <div className="container px-2 mx-auto md:px-12">
+      <Header>
+        <h1 className="text-center text-2xl md:text-4xl font-semibold">
+          ¡Bienvenido al blog de ToGrow!
+        </h1>
 
-          <div className="h-96 lg:h-80 flex flex-col justify-center gap-4">
-            <h1 className="text-center text-2xl md:text-4xl font-semibold">
-              ¡Bienvenido al blog de ToGrow!
-            </h1>
+        <div className="text-center text-sm md:text-lg">
+          <p>
+            Aquí encontrará todo sobre desarrollo de software, exploramos las últimas tendencias en programación, compartimos consejos para optimizar el rendimiento de sus aplicaciones y lo mantendremos al día sobre las novedades en el mundo del desarrollo de software.
+          </p>
+          <p>
+            Actualizamos nuestro blog con nuevas publicaciones cada semana, para que siempre esté al tanto de las mejores prácticas y últimas noticias en el mundo del software.
+          </p>
 
-            <div className="text-center text-sm md:text-lg">
-              <p>
-                Aquí encontrará todo sobre desarrollo de software, exploramos las últimas tendencias en programación, compartimos consejos para optimizar el rendimiento de sus aplicaciones y lo mantendremos al día sobre las novedades en el mundo del desarrollo de software.
-              </p>
-              <p>
-                Actualizamos nuestro blog con nuevas publicaciones cada semana, para que siempre esté al tanto de las mejores prácticas y últimas noticias en el mundo del software.
-              </p>
-
-              <br />
-              <p>
-                Tenemos una gran variedad de contenidos, como tutoriales paso a paso, guías prácticas y análisis de las últimas tecnologías en el mundo del software.
-              </p>
-            </div>
-          </div>
+          <br />
+          <p>
+            Tenemos una gran variedad de contenidos, como tutoriales paso a paso, guías prácticas y análisis de las últimas tecnologías en el mundo del software.
+          </p>
         </div>
-      </div>
+      </Header>
 
       <div className="py-10 container px-2 mx-auto">
         <div className="flex flex-col gap-4">

@@ -16,8 +16,9 @@ export async function getPosts(lang: Lang): Promise<PostMetadata[]> {
   const posts = await Promise.all(
     slugs.map(async (slug) => {
       const { generateMetadata } = await import(`../app/[lang]/blog/(posts)/${slug}/page.tsx`);
-      const metadata = await generateMetadata({ params: { lang }});
-      return { 
+      const metadata = await generateMetadata({ params: { lang, slug, onlyWordings: true } });
+
+      return {
         ...metadata,
         slug,
         date: new Date(metadata.date)
