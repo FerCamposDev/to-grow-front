@@ -13,7 +13,8 @@ export const buildBlogMetadata = ({ wordings, slug, lang }: Params): Metadata =>
     title: wordings.title,
     description: wordings.description,
     authors: {
-      name: wordings.author,
+      name: wordings.author.name,
+      url: wordings.author.url,
     },
     keywords: ['blog', 'software development', ...wordings.categories],
     openGraph: {

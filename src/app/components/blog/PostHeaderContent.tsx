@@ -1,18 +1,16 @@
 import { LangProps } from '@/types/lang';
+import { PostLangMetadata } from '@/types/post';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react'
 
 type Props = LangProps & {
-  title: string;
-  description: string;
-  author: string;
-  authorImg: string;
-  date: Date;
-}
+  metadata: PostLangMetadata;
+};
 
 const PostHeaderContent: FC<Props> = (props) => {
-  const { lang, title, description, author, authorImg, date } = props;
+  const { lang, metadata } = props;
+  const { title, description, author, date } = metadata;
 
   return (
     <div className='relative h-full'>
@@ -39,14 +37,14 @@ const PostHeaderContent: FC<Props> = (props) => {
         <div className='flex items-center gap-2'>
           <Image
             alt="Author"
-            src={authorImg}
+            src={author.image}
             height={40}
             width={40}
             className="w-10 h-10 rounded-full"
           />
 
           <h6>
-            {author}
+            {author.name}
           </h6>
         </div>
 

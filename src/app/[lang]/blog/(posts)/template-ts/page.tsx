@@ -38,14 +38,7 @@ const PostPage = ({ params }: LangParams) => {
   return (
     <main>
       <Header>
-        <PostHeaderContent
-          lang={lang}
-          title={metadata.title}
-          description={wordings.description}
-          author={metadata.author}
-          authorImg={metadata.authorImg}
-          date={new Date(metadata.date)}
-        />
+        <PostHeaderContent lang={lang} metadata={metadata} />
       </Header>
 
       <PostContent>

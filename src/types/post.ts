@@ -1,8 +1,14 @@
+export type Author = {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+}
+
 export type CommonLangMetadata = {
-  author: string;
-  authorImg: string;
+  author: Author;
   categories: string[];
-  date: string; // TODO: now it could be Date because is TS
+  date: Date;
   image: string;
 }
 
@@ -12,6 +18,5 @@ export type PostLangMetadata = CommonLangMetadata & {
 }
 
 export type PostMetadataWithSlug = PostLangMetadata & {
-  date: Date;
   slug: string;
 }

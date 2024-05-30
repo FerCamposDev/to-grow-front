@@ -1,13 +1,14 @@
 
 import { Lang, LangParams } from '@/types/lang'
 import { Metadata } from 'next';
-import es from './es.json';
-import en from './en.json';
 import Header from '@/app/components/blog/Header';
 import PostHeaderContent from '@/app/components/blog/PostHeaderContent';
 import PostContent from '@/app/components/blog/PostContent';
 import PostTitle from '@/app/components/blog/PostTitle';
 import path from 'path';
+import { en } from './lang/en';
+import { es } from './lang/es';
+import { buildBlogMetadata } from '@/helpers/metadata';
 
 const dictionary = { es, en };
 
@@ -26,28 +27,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
   const slug = path.basename(path.dirname(__filename));
 
-  return {
-    title: wordings.title,
-    description: wordings.description,
-    authors: {
-      name: wordings.author,
-    },
-    keywords: ['blog', 'software development', ...wordings.categories],
-    openGraph: {
-      type: 'article',
-      title: wordings.title,
-      images: `https://togrow.com.ar${wordings.image}`,
-      description: wordings.description,
-      url: `https://togrow.com.ar/${lang}/blog/${slug}`,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: wordings.title,
-      description: wordings.description,
-      images: `https://togrow.com.ar${wordings.image}`,
-      site: `https://togrow.com.ar/${lang}/blog/${slug}`,
-    }
-  }
+  return buildBlogMetadata({ lang, slug, wordings });
 }
 
 const PostPage = ({ params }: LangParams) => {
@@ -58,14 +38,7 @@ const PostPage = ({ params }: LangParams) => {
   return (
     <main>
       <Header>
-        <PostHeaderContent
-          lang={lang}
-          title={metadata.title}
-          description={wordings.description}
-          author={metadata.author}
-          authorImg={metadata.authorImg}
-          date={new Date(metadata.date)}
-        />
+        <PostHeaderContent lang={lang} metadata={metadata} />
       </Header>
 
       <PostContent>
