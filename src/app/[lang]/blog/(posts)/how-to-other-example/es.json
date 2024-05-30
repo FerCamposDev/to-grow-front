@@ -4,7 +4,9 @@
     "date": "2024-01-03T00:00:00Z",
     "categories": ["rock"],
     "image": "/img/about/1.jpg",
-    "description": "Esta es la descripcion del segundo posteo"
+    "description": "Esta es la descripcion del segundo posteo",
+    "author": "Fernando Campos",
+    "authorImg": "/img/team/fer-2.png"
   },
   "content": "Este es el contenido del poste en español"
 }

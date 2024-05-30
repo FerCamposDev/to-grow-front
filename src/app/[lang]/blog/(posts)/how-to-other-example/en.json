@@ -4,7 +4,9 @@
     "date": "2024-01-03T00:00:00Z",
     "categories": ["rock"],
     "image": "/img/about/1.jpg",
-    "description": "this is a description of two"
+    "description": "this is a description of two",
+    "author": "Fernando Campos",
+    "authorImg": "/img/team/fer-2.png"
   },
   "content": "this is the content of the post"
 }

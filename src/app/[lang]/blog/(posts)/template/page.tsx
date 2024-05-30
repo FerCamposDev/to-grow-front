@@ -7,22 +7,24 @@ import Header from '@/app/components/blog/Header';
 import PostHeaderContent from '@/app/components/blog/PostHeaderContent';
 import PostContent from '@/app/components/blog/PostContent';
 import PostTitle from '@/app/components/blog/PostTitle';
+import path from 'path';
 
 const dictionary = { es, en };
 
 type Params = {
   params: {
     lang: Lang;
-    slug: string;
     onlyWordings?: boolean;
   }
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { lang = 'es', slug } = params;
+  const { lang = 'es' } = params;
   const wordings = dictionary[lang].metadata;
 
   if (params.onlyWordings) return wordings;
+
+  const slug = path.basename(path.dirname(__filename));
 
   return {
     title: wordings.title,
