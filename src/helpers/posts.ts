@@ -1,9 +1,9 @@
 import { Lang } from "@/types/lang";
-import { PostMetadata } from "@/types/post";
+import { PostMetadataWithSlug } from "@/types/post";
 import { readdir } from "fs/promises";
 import path from "path";
 
-export async function getPosts(lang: Lang): Promise<PostMetadata[]> {
+export async function getPosts(lang: Lang): Promise<PostMetadataWithSlug[]> {
   // Get slugs
   const postsPath = "src/app/[lang]/blog/(posts)";
   const directories = await readdir(path.resolve(postsPath), { withFileTypes: true });

@@ -1,10 +1,10 @@
 import { Lang } from "@/types/lang";
-import { PostMetadata } from "@/types/post";
+import { PostMetadataWithSlug } from "@/types/post";
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
-  data: PostMetadata;
+  data: PostMetadataWithSlug;
   lang: Lang;
 }
 
