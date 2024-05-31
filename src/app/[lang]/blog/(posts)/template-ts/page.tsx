@@ -14,6 +14,7 @@ import PostSubtitle from '@/app/components/blog/PostSubtitle';
 import PostList from '@/app/components/blog/PostList';
 import PostImage from '@/app/components/blog/PostImage';
 import PostQuote from '@/app/components/blog/PostQuote';
+import PostShareButtons from '@/app/components/blog/PostShareButtons';
 
 const dictionary = { es, en };
 
@@ -102,6 +103,9 @@ const PostPage = ({ params }: LangParams) => {
         <PostDescription>
           {wordings.conclusion.desc3}
         </PostDescription>
+
+        <br />
+        <PostShareButtons lang={lang} />
       </PostContent>
     </main>
   )
