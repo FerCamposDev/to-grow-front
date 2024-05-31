@@ -47,7 +47,7 @@ const PostPage = ({ params }: LangParams) => {
         <PostHeaderContent lang={lang} metadata={metadata} />
       </Header>
 
-      <PostContent>
+      <PostContent lang={lang}>
         <PostTitle>{wordings.title}</PostTitle>
         <PostDescription>
           {wordings.description}
@@ -103,9 +103,6 @@ const PostPage = ({ params }: LangParams) => {
         <PostDescription>
           {wordings.conclusion.desc3}
         </PostDescription>
-
-        <br />
-        <PostShareButtons lang={lang} />
       </PostContent>
     </main>
   )

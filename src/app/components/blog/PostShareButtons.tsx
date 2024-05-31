@@ -12,10 +12,10 @@ const PostShareButtons = ({ lang }: LangProps) => {
   const url = encodeURI(`https://togrow.com.ar/${lang}/blog/${slug}`);
 
   return (
-    <div className='flex flex-col gap-3 p-2 w-auto rounded-md border-2 border-gray-300 max-w-64'>
+    <div className='flex flex-col gap-3 max-w-64'>
       <span className='font-medium text-xl'>{shareText}</span>
 
-      <div className='flex justify-around items-center'>
+      <div className='flex justify-center items-center gap-4'>
         <Link href={`https://www.facebook.com/share.php?u=${url}`} target='_blank'>
           <i style={{ color: '#0866ff' }} className="fab fa-facebook-square text-5xl" aria-hidden="true"></i>
         </Link>
