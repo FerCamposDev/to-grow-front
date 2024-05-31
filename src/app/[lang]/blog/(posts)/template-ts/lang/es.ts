@@ -11,11 +11,11 @@ export const es = {
       items: [
         {
           title: "Item title 1",
-          desc: "item description 1"
+          desc: "item description 1."
         },
         {
           title: "Item title 2",
-          desc: "item description 2"
+          desc: "item description 2."
         }
       ],
       finalDesc: "This is a final description of the topic"
@@ -23,6 +23,7 @@ export const es = {
     section2: {
       title: "It could be a question",
       desc: "description about the question",
+      quote: "By comprehending the essentials of supervised, unsupervised, and reinforcement learning, you can delve into the power of machine learning and its transformative impact on your business operations.",
       image: "/img/home/3.jpeg",
       finalDesc: "This is a final description of the topic"
     },

@@ -23,6 +23,7 @@ export const en = {
     section2: {
       title: "It could be a question",
       desc: "description about the question",
+      quote: "this is an example o quote",
       image: "/img/home/3.jpeg",
       finalDesc: "This is a final description of the topic"
     },
