@@ -13,8 +13,6 @@ import PostDescription from '@/app/components/blog/PostDescription';
 import PostSubtitle from '@/app/components/blog/PostSubtitle';
 import List from '@/app/components/blog/PostList';
 import PostImage from '@/app/components/blog/PostImage';
-import PostQuote from '@/app/components/blog/PostQuote';
-import PostShareButtons from '@/app/components/blog/PostShareButtons';
 
 const dictionary = { es, en };
 
@@ -49,7 +47,7 @@ const PostPage = ({ params }: LangParams) => {
 
       <PostContent lang={lang}>
         <PostTitle>{wordings.title}</PostTitle>
-        <PostDescription>
+        <PostDescription lineJump>
           {wordings.description}
         </PostDescription>
 
@@ -60,7 +58,7 @@ const PostPage = ({ params }: LangParams) => {
           {wordings.section1.desc}
         </PostDescription>
         <br />
-        <List numerated items={wordings.section1.items} />
+        <List items={wordings.section1.items} numerated />
         <br />
         <PostDescription>
           {wordings.section1.finalDesc}
@@ -72,18 +70,19 @@ const PostPage = ({ params }: LangParams) => {
         <PostDescription>
           {wordings.section2.desc}
         </PostDescription>
-        <PostQuote>
-          {wordings.section2.quote}
-        </PostQuote>
-        <PostImage
-          src={wordings.section2.image}
-          alt="example"
-          desc='sample description'
-        />
+        <br/>
+        <List items={wordings.section2.items} lineJump />
         <br />
         <PostDescription>
           {wordings.section2.finalDesc}
         </PostDescription>
+        <br />
+        <PostImage
+          src={wordings.section2.image}
+          alt="example"
+          desc={wordings.section2.imageDesc}
+        />
+        <br />
 
         <PostSubtitle>
           {wordings.conclusion.title}
@@ -93,9 +92,6 @@ const PostPage = ({ params }: LangParams) => {
         </PostDescription>
         <PostDescription>
           {wordings.conclusion.desc2}
-        </PostDescription>
-        <PostDescription>
-          {wordings.conclusion.desc3}
         </PostDescription>
       </PostContent>
     </main>
