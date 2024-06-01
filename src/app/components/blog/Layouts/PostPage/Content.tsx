@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from 'react'
 import { Lang } from '@/types/lang';
-import ShareButtons from './PostShareButtons';
-import Button from '../../shared/Button';
+import ShareButtons from './ShareButtons';
+import Button from '../../../shared/Button';
 import Link from 'next/link';
 import { dictionary } from '@/i18n';
 

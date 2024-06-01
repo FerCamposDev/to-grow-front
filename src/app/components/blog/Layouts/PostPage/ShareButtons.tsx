@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import xLogo from '../../../../../public/img/x-logo.svg';
-import whatsappLogo from '../../../../../public/img/whatsapp-logo.svg';
+import xLogo from '../../../../../../public/img/x-logo.svg';
+import whatsappLogo from '../../../../../../public/img/whatsapp-logo.svg';
 import { LangProps } from '@/types/lang';
 import Link from 'next/link';
 import path from 'path';
