@@ -3,7 +3,7 @@ type Props = {
   lineJump?: boolean;
 }
 
-const PostDescription = ({ children, lineJump }: Props) => {
+const Description = ({ children, lineJump }: Props) => {
 
   const render = (child: string) => {
     return (
@@ -32,4 +32,4 @@ const PostDescription = ({ children, lineJump }: Props) => {
   return render(children);
 }
 
-export default PostDescription
+export default Description

@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import React from 'react'
+import NextImage from 'next/image'
 
 type Props = {
   src: string;
@@ -8,11 +7,11 @@ type Props = {
   className?: string;
 }
 
-const PostImage = ({ src, alt, desc, className }: Props) => {
+const Image = ({ src, alt, desc, className }: Props) => {
   return (
     <div className={className}>
       <div className='flex flex-col'>
-        <Image
+        <NextImage
           src={src}
           alt={alt}
           layout="fill"
@@ -27,4 +26,4 @@ const PostImage = ({ src, alt, desc, className }: Props) => {
   )
 }
 
-export default PostImage
+export default Image

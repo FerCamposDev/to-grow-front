@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from 'react'
 
 type Props = {}
 
-const PostTitle = ({children}: PropsWithChildren) => {
+const Title = ({children}: PropsWithChildren) => {
   return (
     <h2 className='font-medium text-3xl mb-2'>
       {children}
@@ -10,4 +10,4 @@ const PostTitle = ({children}: PropsWithChildren) => {
   )
 }
 
-export default PostTitle
+export default Title

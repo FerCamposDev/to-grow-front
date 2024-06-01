@@ -1,18 +1,17 @@
 
 import { Metadata } from 'next';
-import path from 'path';
 import { Lang, LangParams } from '@/types/lang'
 import { en } from './lang/en';
 import { es } from './lang/es';
 import { buildBlogMetadata } from '@/helpers/metadata';
-import Header from '@/app/components/blog/Header';
-import PostHeaderContent from '@/app/components/blog/PostHeaderContent';
-import PostContent from '@/app/components/blog/PostContent';
-import PostTitle from '@/app/components/blog/PostTitle';
-import PostDescription from '@/app/components/blog/PostDescription';
-import PostSubtitle from '@/app/components/blog/PostSubtitle';
+import BlogHeader from '@/app/components/blog/Layouts/BlogHeader';
+import PostHeaderContent from '@/app/components/blog/Layouts/PostHeaderContent';
+import PostContent from '@/app/components/blog/Layouts/PostContent';
+import Title from '@/app/components/blog/PostTitle';
+import Description from '@/app/components/blog/PostDescription';
+import Subtitle from '@/app/components/blog/PostSubtitle';
 import List from '@/app/components/blog/PostList';
-import PostImage from '@/app/components/blog/PostImage';
+import Image from '@/app/components/blog/PostImage';
 
 const dictionary = { es, en };
 
@@ -29,9 +28,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
   if (params.onlyWordings) return wordings;
 
-  const slug = path.basename(path.dirname(__filename));
-
-  return buildBlogMetadata({ lang, slug, wordings });
+  return buildBlogMetadata({ lang, wordings });
 }
 
 const PostPage = ({ params }: LangParams) => {
@@ -41,58 +38,58 @@ const PostPage = ({ params }: LangParams) => {
 
   return (
     <main>
-      <Header>
+      <BlogHeader>
         <PostHeaderContent lang={lang} metadata={metadata} />
-      </Header>
+      </BlogHeader>
 
       <PostContent lang={lang}>
-        <PostTitle>{wordings.title}</PostTitle>
-        <PostDescription lineJump>
+        <Title>{wordings.title}</Title>
+        <Description lineJump>
           {wordings.description}
-        </PostDescription>
+        </Description>
 
-        <PostSubtitle>
+        <Subtitle>
           {wordings.section1.title}
-        </PostSubtitle>
-        <PostDescription>
+        </Subtitle>
+        <Description>
           {wordings.section1.desc}
-        </PostDescription>
+        </Description>
         <br />
         <List items={wordings.section1.items} numerated />
         <br />
-        <PostDescription>
+        <Description>
           {wordings.section1.finalDesc}
-        </PostDescription>
+        </Description>
 
-        <PostSubtitle>
+        <Subtitle>
           {wordings.section2.title}
-        </PostSubtitle>
-        <PostDescription>
+        </Subtitle>
+        <Description>
           {wordings.section2.desc}
-        </PostDescription>
+        </Description>
         <br/>
         <List items={wordings.section2.items} lineJump />
         <br />
-        <PostDescription>
+        <Description>
           {wordings.section2.finalDesc}
-        </PostDescription>
+        </Description>
         <br />
-        <PostImage
+        <Image
           src={wordings.section2.image}
           alt="example"
           desc={wordings.section2.imageDesc}
         />
         <br />
 
-        <PostSubtitle>
+        <Subtitle>
           {wordings.conclusion.title}
-        </PostSubtitle>
-        <PostDescription>
+        </Subtitle>
+        <Description>
           {wordings.conclusion.desc1}
-        </PostDescription>
-        <PostDescription>
+        </Description>
+        <Description>
           {wordings.conclusion.desc2}
-        </PostDescription>
+        </Description>
       </PostContent>
     </main>
   )

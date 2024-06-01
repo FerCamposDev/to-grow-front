@@ -13,13 +13,10 @@ const PostItem = ({ item }: Props) => {
   const render = (child: string) => {
     return (
       <li className="">
-        <p>
-          <b className="">{title}&nbsp;</b>
-          <div
-            className="inline"
-            dangerouslySetInnerHTML={{ __html: child }}
-          />
-        </p>
+        <p
+          className=""
+          dangerouslySetInnerHTML={{ __html: `<b>${title}</b> ${child}` }}
+        />
       </li>
     );
   }

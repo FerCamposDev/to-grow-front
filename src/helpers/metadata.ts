@@ -1,14 +1,16 @@
+import { Metadata } from "next";
+import path from "path";
 import { Lang } from "@/types/lang";
 import { PostLangMetadata } from "@/types/post";
-import { Metadata } from "next";
 
 type Params = {
   wordings: PostLangMetadata;
-  slug: string;
   lang: Lang;
 }
 
-export const buildBlogMetadata = ({ wordings, slug, lang }: Params): Metadata => {
+export const buildBlogMetadata = ({ wordings, lang }: Params): Metadata => {
+  const slug = path.basename(path.dirname(__filename));
+
   return {
     title: wordings.title,
     description: wordings.description,

@@ -1,4 +1,4 @@
-import Header from "@/app/components/blog/Header";
+import BlogHeader from "@/app/components/blog/Layouts/BlogHeader";
 import PostCard from "@/app/components/sections/Blog/PostCard";
 import { getPosts } from "@/helpers/posts";
 import { LangParams } from "@/types/lang";
@@ -10,7 +10,7 @@ export default function Home({ params }: LangParams) {
 
   return (
     <main className="">
-      <Header>
+      <BlogHeader>
         <h1 className="text-center text-2xl md:text-4xl font-semibold">
           ¡Bienvenido al blog de ToGrow!
         </h1>
@@ -28,7 +28,7 @@ export default function Home({ params }: LangParams) {
             Tenemos una gran variedad de contenidos, como tutoriales paso a paso, guías prácticas y análisis de las últimas tecnologías en el mundo del software.
           </p>
         </div>
-      </Header>
+      </BlogHeader>
 
       <div className="py-10 container px-2 mx-auto">
         <div className="flex flex-col gap-4">

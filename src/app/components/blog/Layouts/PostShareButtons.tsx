@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import xLogo from '../../../../public/img/x-logo.svg';
-import whatsappLogo from '../../../../public/img/whatsapp-logo.svg';
+import xLogo from '../../../../../public/img/x-logo.svg';
+import whatsappLogo from '../../../../../public/img/whatsapp-logo.svg';
 import { LangProps } from '@/types/lang';
 import Link from 'next/link';
 import path from 'path';
 
-const PostShareButtons = ({ lang }: LangProps) => {
+const ShareButtons = ({ lang }: LangProps) => {
 
   const shareText = lang === 'es' ? 'Comparte este post' : 'Share this post'
   const slug = path.basename(path.dirname(__filename));
@@ -33,4 +33,4 @@ const PostShareButtons = ({ lang }: LangProps) => {
   )
 }
 
-export default PostShareButtons
+export default ShareButtons

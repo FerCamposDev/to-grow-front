@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from 'react'
 import { Lang } from '@/types/lang';
-import PostShareButtons from './PostShareButtons';
-import Button from '../shared/Button';
+import ShareButtons from './PostShareButtons';
+import Button from '../../shared/Button';
 import Link from 'next/link';
 import { dictionary } from '@/i18n';
 
@@ -19,7 +19,7 @@ const PostContent: FC<Props> = ({ children, lang }) => {
 
         <br />
         <div className='flex justify-center items-center flex-wrap gap-10 md:justify-between'>
-          <PostShareButtons lang={lang} />
+          <ShareButtons lang={lang} />
 
           <div className='flex flex-col items-center gap-3'>
             <h6 className='font-medium text-xl'>{wordings.contact_section.title}</h6>

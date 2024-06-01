@@ -1,8 +1,6 @@
-import React, { FC, PropsWithChildren } from 'react'
+import { FC, PropsWithChildren } from 'react'
 
-type Props = {}
-
-const Header: FC<PropsWithChildren> = ({children}) => {
+const BlogHeader: FC<PropsWithChildren> = ({children}) => {
   return (
     <div className="relative" style={{ backgroundImage: "url('/img/blog/background2.jpg')" }}>
       <div className="container px-2 mx-auto md:px-12">
@@ -14,4 +12,4 @@ const Header: FC<PropsWithChildren> = ({children}) => {
   )
 }
 
-export default Header
+export default BlogHeader

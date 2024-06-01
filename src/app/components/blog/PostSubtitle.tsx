@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 
-const PostSubtitle = ({children}: PropsWithChildren) => {
+const Subtitle = ({children}: PropsWithChildren) => {
   return (
     <h3 className='font-medium text-2xl mt-6 mb-2'>
       {children}
@@ -8,4 +8,4 @@ const PostSubtitle = ({children}: PropsWithChildren) => {
   )
 }
 
-export default PostSubtitle
+export default Subtitle
