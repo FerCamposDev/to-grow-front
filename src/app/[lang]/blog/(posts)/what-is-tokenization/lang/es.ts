@@ -1,13 +1,16 @@
+import { Post } from "@/types/post";
 import { esMetadata } from "./metadata";
 
-export const es = {
+export const es: Post = {
   metadata: esMetadata,
   content: {
-    title: "Introduction",
-    description: [
-      "Tokenization is revolutionizing the way we interact with and invest in real-world assets. By leveraging <b>Web3</b> technologies, it's now possible to represent physical assets like real estate, art, and commodities on the blockchain, transforming them into digital tokens. This groundbreaking approach not only broadens investment horizons but also injects unprecedented liquidity into markets traditionally known for their inaccessibility and opacity.",
-      "We’ll explore the intricate mechanisms of asset tokenization, its myriad benefits, the challenges it faces, and some compelling real-world case studies that showcase its transformative potential. Whether you're a seasoned investor or new to the blockchain world, understanding the implications of tokenizing real-world assets could be a game-changer for your investment strategy, and we're here to guide you through this new landscape."
-    ],
+    intro: {
+      title: "Introduction",
+      desc: [
+        "Tokenization is revolutionizing the way we interact with and invest in real-world assets. By leveraging <b>Web3</b> technologies, it's now possible to represent physical assets like real estate, art, and commodities on the blockchain, transforming them into digital tokens. This groundbreaking approach not only broadens investment horizons but also injects unprecedented liquidity into markets traditionally known for their inaccessibility and opacity.",
+        "We’ll explore the intricate mechanisms of asset tokenization, its myriad benefits, the challenges it faces, and some compelling real-world case studies that showcase its transformative potential. Whether you're a seasoned investor or new to the blockchain world, understanding the implications of tokenizing real-world assets could be a game-changer for your investment strategy, and we're here to guide you through this new landscape."
+      ],
+    },
     section1: {
       title: "The Technology Behind Asset Tokenization",
       desc: "The foundation of asset tokenization is blockchain technology, a secure and transparent digital ledger system that enables the representation and trading of real-world assets in a digital format. Here's how this innovative process works:",
@@ -56,13 +59,17 @@ export const es = {
         },
       ],
       finalDesc: "The benefits of tokenizing real-world assets are profound, extending beyond individual investors to the broader financial ecosystem. By enhancing liquidity, democratizing investment, increasing transparency, and fostering innovation, tokenization has the potential to redefine asset ownership and investment in the digital age.",
-      image: "/img/home/2.jpg",
-      imageDesc: "Asset Tokenization Estimates, Source: BCG, ADDX.",
+      image: {
+        url: "/img/home/2.jpg",
+        desc: "Asset Tokenization Estimates, Source: BCG, ADDX.",
+      }
     },
     conclusion: {
       title: "Conclusion",
-      desc1: "As we delve into this new frontier, the potential of asset tokenization to revolutionize investment in real estate, art, commodities, and beyond is unmistakably profound. It promises to dismantle traditional barriers, offering a more granular and accessible approach to investment that aligns with the digital age's demands.",
-      desc2: "The road ahead is as challenging as it is exciting, promising a future where the tokenization of assets is a standard practice, enriching the investment ecosystem with unprecedented flexibility and opportunity.",
+      desc: [
+        "As we delve into this new frontier, the potential of asset tokenization to revolutionize investment in real estate, art, commodities, and beyond is unmistakably profound. It promises to dismantle traditional barriers, offering a more granular and accessible approach to investment that aligns with the digital age's demands.",
+        "The road ahead is as challenging as it is exciting, promising a future where the tokenization of assets is a standard practice, enriching the investment ecosystem with unprecedented flexibility and opportunity.",
+      ],
     }
   }
 }

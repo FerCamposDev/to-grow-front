@@ -36,9 +36,9 @@ const PostPage = ({ params }: LangParams) => {
 
   return (
     <PostPageLayout lang={lang} metadata={metadata}>
-      <Title>{wordings.title}</Title>
+      <Title>{wordings.intro.title}</Title>
       <Description lineJump>
-        {wordings.description}
+        {wordings.intro.desc}
       </Description>
 
       <Subtitle>
@@ -48,10 +48,10 @@ const PostPage = ({ params }: LangParams) => {
         {wordings.section1.desc}
       </Description>
       <br />
-      <List items={wordings.section1.items} numerated />
+      <List items={wordings.section1.items!} numerated />
       <br />
       <Description>
-        {wordings.section1.finalDesc}
+        {wordings.section1.finalDesc!}
       </Description>
 
       <Subtitle>
@@ -61,16 +61,16 @@ const PostPage = ({ params }: LangParams) => {
         {wordings.section2.desc}
       </Description>
       <br />
-      <List items={wordings.section2.items} lineJump />
+      <List items={wordings.section2.items!} lineJump />
       <br />
       <Description>
-        {wordings.section2.finalDesc}
+        {wordings.section2.finalDesc!}
       </Description>
       <br />
       <Image
-        src={wordings.section2.image}
+        src={wordings.section2.image?.url!}
         alt="example"
-        desc={wordings.section2.imageDesc}
+        desc={wordings.section2.image?.desc}
       />
       <br />
 
@@ -78,10 +78,7 @@ const PostPage = ({ params }: LangParams) => {
         {wordings.conclusion.title}
       </Subtitle>
       <Description>
-        {wordings.conclusion.desc1}
-      </Description>
-      <Description>
-        {wordings.conclusion.desc2}
+        {wordings.conclusion.desc}
       </Description>
     </PostPageLayout>
   )

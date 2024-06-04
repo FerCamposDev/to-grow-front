@@ -1,13 +1,14 @@
-import PostItem, { Item } from "./PostItem";
+import { ItemContent } from "@/types/post";
+import PostItem from "./PostItem";
 
 type Props = {
-  items: Item[]
+  items: ItemContent[]
   numerated?: boolean;
   gap?: number;
   lineJump?: boolean
 };
 
-const List = ({ items, numerated, gap = 0, lineJump }: Props) => {
+const List = ({ items = [], numerated, gap = 0, lineJump }: Props) => {
   const renderItems = () => {
     return items.map((item, index) => {
       const isLast = items.length === index + 1;

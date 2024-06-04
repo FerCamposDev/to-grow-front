@@ -1,10 +1,7 @@
-export type Item = {
-  title: string;
-  desc: string | string[];
-}
+import { ItemContent } from "@/types/post";
 
 type Props = {
-  item: Item
+  item: ItemContent
 }
 
 const PostItem = ({ item }: Props) => {
