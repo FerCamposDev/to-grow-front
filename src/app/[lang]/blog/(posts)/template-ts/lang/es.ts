@@ -24,7 +24,10 @@ export const es = {
       title: "It could be a question",
       desc: "description about the question",
       quote: "By comprehending the essentials of supervised, unsupervised, and reinforcement learning, you can delve into the power of machine learning and its transformative impact on your business operations.",
-      image: "/img/home/3.jpeg",
+      image: {
+        url: "/img/home/3.jpeg",
+        alt: 'sample',
+      },
       finalDesc: "This is a final description of the topic"
     },
     conclusion: {

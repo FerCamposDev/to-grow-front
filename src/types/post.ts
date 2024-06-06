@@ -26,22 +26,29 @@ export type ItemContent = {
   desc: string | string[];
 }
 
-type ImageContent = {
+export type ImageContent = {
   url: string;
-  desc: string;
+  desc?: string;
+  alt: string;
 }
 
 type SectionContent = {
   title: string;
   desc: string | string[];
   items?: ItemContent[];
-  finalDesc?: string | string[];
   image?: ImageContent;
+  finalDesc?: string | string[];
 }
 
 export type PostContent = {
-  intro: SectionContent
-  [key: string]: SectionContent;
+  intro: SectionContent;
+  body: {
+    section1: SectionContent;
+    section2: SectionContent;
+    section3?: SectionContent;
+    section4?: SectionContent;
+    section5?: SectionContent;
+  }
   conclusion: SectionContent;
 }
 

@@ -24,7 +24,10 @@ export const en = {
       title: "It could be a question",
       desc: "description about the question",
       quote: "this is an example o quote",
-      image: "/img/home/3.jpeg",
+      image: {
+        url: "/img/home/3.jpeg",
+        alt: 'sample',
+      },
       finalDesc: "This is a final description of the topic"
     },
     conclusion: {

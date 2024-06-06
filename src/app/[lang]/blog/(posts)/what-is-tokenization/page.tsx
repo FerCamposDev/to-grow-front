@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 
 import { Metadata } from 'next';
 import { Lang, LangParams } from '@/types/lang'
@@ -32,53 +33,53 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 const PostPage = ({ params }: LangParams) => {
   const { lang = 'es' } = params;
   const metadata = dictionary[lang].metadata;
-  const wordings = dictionary[lang].content;
+  const {
+    intro,
+    body,
+    conclusion
+  } = dictionary[lang].content;
 
   return (
     <PostPageLayout lang={lang} metadata={metadata}>
-      <Title>{wordings.intro.title}</Title>
+      <Title>{intro.title}</Title>
       <Description lineJump>
-        {wordings.intro.desc}
+        {intro.desc}
       </Description>
 
       <Subtitle>
-        {wordings.section1.title}
+        {body.section1.title}
       </Subtitle>
       <Description>
-        {wordings.section1.desc}
+        {body.section1.desc}
       </Description>
       <br />
-      <List items={wordings.section1.items!} numerated />
+      <List items={body.section1.items!} numerated />
       <br />
       <Description>
-        {wordings.section1.finalDesc!}
+        {body.section1.finalDesc!}
       </Description>
 
       <Subtitle>
-        {wordings.section2.title}
+        {body.section2.title}
       </Subtitle>
       <Description>
-        {wordings.section2.desc}
+        {body.section2.desc}
       </Description>
       <br />
-      <List items={wordings.section2.items!} lineJump />
+      <List items={body.section2.items!} lineJump />
       <br />
       <Description>
-        {wordings.section2.finalDesc!}
+        {body.section2.finalDesc!}
       </Description>
       <br />
-      <Image
-        src={wordings.section2.image?.url!}
-        alt="example"
-        desc={wordings.section2.image?.desc}
-      />
+      <Image data={body.section2.image!} />
       <br />
 
       <Subtitle>
-        {wordings.conclusion.title}
+        {conclusion.title}
       </Subtitle>
       <Description>
-        {wordings.conclusion.desc}
+        {conclusion.desc}
       </Description>
     </PostPageLayout>
   )

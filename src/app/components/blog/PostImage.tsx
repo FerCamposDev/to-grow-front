@@ -1,19 +1,19 @@
+import { ImageContent } from '@/types/post';
 import NextImage from 'next/image'
 
 type Props = {
-  src: string;
-  alt: string;
-  desc?: string;
+  data: ImageContent;
   className?: string;
 }
 
-const Image = ({ src, alt, desc, className }: Props) => {
+const Image = ({ data, className }: Props) => {
+  const { url, alt, desc } = data;
   return (
     <div className={className}>
       <div className='flex flex-col'>
         <NextImage
-          src={src}
-          alt={alt}
+          src={url}
+          alt={alt || ''}
           layout="fill"
           objectFit="cover"
           className='!relative'

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 
 import { Metadata } from 'next';
 import { Lang, LangParams } from '@/types/lang'
@@ -65,11 +66,7 @@ const PostPage = ({ params }: LangParams) => {
       <Quote>
         {wordings.section2.quote}
       </Quote>
-      <Image
-        src={wordings.section2.image}
-        alt="example"
-        desc='sample description'
-      />
+      <Image data={wordings.section2.image} />
       <br />
       <Description>
         {wordings.section2.finalDesc}
