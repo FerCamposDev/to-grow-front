@@ -12,10 +12,12 @@ export const esMetadata: PostLangMetadata = {
   ...commonMetadata,
   title: "Post Plantilla",
   description: "Description del post",
+  tags: ["aplicaciones nativas", "aplicaciones", "android", "ios", "pwa"],
 };
 
 export const enMetadata: PostLangMetadata = {
   ...commonMetadata,
   title: "Post Template",
   description: "Post's Description",
+  tags: ["applications", "native applications", "android", "ios", "pwa"],
 };

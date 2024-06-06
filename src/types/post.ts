@@ -15,6 +15,7 @@ export type CommonLangMetadata = {
 export type PostLangMetadata = CommonLangMetadata & {
   title: string;
   description: string;
+  tags: string[];
 }
 
 export type PostMetadataWithSlug = PostLangMetadata & {
@@ -48,6 +49,8 @@ export type PostContent = {
     section3?: SectionContent;
     section4?: SectionContent;
     section5?: SectionContent;
+    section6?: SectionContent;
+    section7?: SectionContent;
   }
   conclusion: SectionContent;
 }

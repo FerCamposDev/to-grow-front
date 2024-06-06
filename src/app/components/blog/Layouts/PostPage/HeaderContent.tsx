@@ -25,7 +25,7 @@ const PostHeaderContent: FC<Props> = (props) => {
 
       <div className='h-full flex flex-col justify-center gap-2'>
         <h1 className="font-bold text-2xl md:text-4xl">
-          {title}:
+          {title}
         </h1>
 
         <p className='text-lg md:text-xl'>
