@@ -13,12 +13,13 @@ const PostContent: FC<Props> = ({ children, lang }) => {
   const wordings = dictionary[lang];
 
   return (
-    <article>
-      <div className='container px-2 mx-auto py-10 md:px-12'>
-        {children}
+    <div className='container px-2 mx-auto py-10 md:px-12'>
+      <div className='flex flex-wrap lg:flex-nowrap'>
+        <article className='w-full lg:w-10/12 mb-24'>
+          {children}
+        </article>
 
-        <br />
-        <div className='flex justify-center items-center flex-wrap gap-10 md:justify-between'>
+        <aside className='flex gap-8 flex-col md:flex-row lg:flex-col items-center justify-between text-center w-full lg:w-auto mb-24'>
           <ShareButtons lang={lang} />
 
           <div className='flex flex-col items-center gap-3'>
@@ -29,9 +30,9 @@ const PostContent: FC<Props> = ({ children, lang }) => {
               </Button>
             </Link>
           </div>
-        </div>
+        </aside>
       </div>
-    </article>
+    </div>
   )
 }
 

@@ -109,7 +109,7 @@ const PostPage = ({ params }: LangParams) => {
       <Subtitle>
         {conclusion.title}
       </Subtitle>
-      <Description>
+      <Description className='text-justify' lineJump>
         {conclusion.desc}
       </Description>
     </PostPageLayout>

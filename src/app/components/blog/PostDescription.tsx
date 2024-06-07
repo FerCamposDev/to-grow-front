@@ -1,14 +1,15 @@
 type Props = {
   children: string | string[];
   lineJump?: boolean;
+  className?: string;
 }
 
-const Description = ({ children, lineJump }: Props) => {
+const Description = ({ children, lineJump, className }: Props) => {
 
   const render = (child: string) => {
     return (
       <p
-        className="text-xl"
+        className={`text-xl ${className}`}
         dangerouslySetInnerHTML={{ __html: child }}
       />
     );
