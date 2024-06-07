@@ -17,7 +17,7 @@ export const enMetadata: PostLangMetadata = {
 
 export const esMetadata: PostLangMetadata = {
   ...commonMetadata,
-  title: "¿Porqué debería tener una app propia?",
+  title: "¿Por qué debería tener una app propia?",
   // TODO: review this description
   description: "Descubre los beneficios comerciales de tener una aplicación propia, incluyendo la mejora de la experiencia del cliente, el incremento de las ventas, el aumento de la retención y la fidelidad.",
   tags: ["beneficios de aplicaciones", "software personalizado", "aplicaciones web", "sitios web", "aplicationes"],
