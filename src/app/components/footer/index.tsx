@@ -16,7 +16,7 @@ const Footer = () => {
               <Image src="/img/favicon/android-chrome-192x192.png" alt="logo" height={50} width={50} />
               <h1 className="text-white font-bold text-4xl ml-2">To<span className="text-secondary">Grow</span></h1>
             </a>
-            <p className="text-gray-300">You grow, We grow.</p>
+            <p className="text-gray-300 ml-7">You grow, We grow.</p>
             <div className="flex mt-4">
               <a
                 href="https://www.linkedin.com/company/togrow-argentina"
