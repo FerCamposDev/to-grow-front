@@ -2,14 +2,15 @@ type Props = {
   children: string | string[];
   lineJump?: boolean;
   className?: string;
+  size?: 'base' | 'lg' | 'xl' | '2xl';
 }
 
-const Description = ({ children, lineJump, className }: Props) => {
+const Description = ({ children, lineJump, className, size = 'base' }: Props) => {
 
   const render = (child: string) => {
     return (
       <p
-        className={`text-xl ${className}`}
+        className={`text-${size} ${className}`}
         dangerouslySetInnerHTML={{ __html: child }}
       />
     );

@@ -43,7 +43,7 @@ const PostPage = ({ params }: LangParams) => {
     <PostPageLayout lang={lang} metadata={metadata}>
       <Title>{intro.title}</Title>
       <br />
-      <Description lineJump>
+      <Description lineJump size="xl">
         {intro.desc}
       </Description>
       <br />
@@ -112,7 +112,7 @@ const PostPage = ({ params }: LangParams) => {
       <Subtitle>
         {conclusion.title}
       </Subtitle>
-      <Description className='text-justify' lineJump>
+      <Description className='text-justify' lineJump size="xl">
         {conclusion.desc}
       </Description>
     </PostPageLayout>

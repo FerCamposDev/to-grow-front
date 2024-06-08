@@ -5,7 +5,7 @@ export const es = {
   metadata: esMetadata,
   content: {
     intro: {
-      title: "Introducción a las aplicaciones propias",
+      title: "Introducción a las aplicaciones",
       desc: [
         "En la era digital actual, las aplicaciones se han convertido en una herramienta esencial para las empresas que buscan mejorar su relación con los clientes, aumentar sus ventas y mantenerse competitivas. Las aplicaciones propias ofrecen múltiples beneficios comerciales que pueden transformar la manera en que una empresa interactúa con sus clientes y gestiona sus operaciones.",
       ],
@@ -14,8 +14,8 @@ export const es = {
       section1: {
         title: "¿Qué es una aplicación propia?",
         desc: [
-          "Una aplicación propia es una aplicación móvil desarrollada específicamente para una empresa, con el objetivo de satisfacer sus necesidades y las de sus clientes. Estas aplicaciones son personalizadas y pueden incluir una variedad de funcionalidades que permiten a las empresas ofrecer servicios únicos y mejorar la experiencia del usuario.",
-          "Desde su aparición, las aplicaciones móviles han evolucionado significativamente. Inicialmente, eran simples herramientas de comunicación y entretenimiento, pero con el tiempo se han convertido en plataformas complejas que pueden manejar diversas tareas, desde compras en línea hasta gestión de negocios. La creciente adopción de smartphones ha impulsado aún más su popularidad, haciendo de las aplicaciones móviles una parte integral del ecosistema digital."
+          "Una aplicación propia es una software desarrollado específicamente para una empresa, con el objetivo de satisfacer sus necesidades y las de sus clientes. Estas aplicaciones son personalizadas y pueden incluir una variedad de funcionalidades que permiten a las empresas ofrecer servicios únicos y mejorar la experiencia del usuario.",
+          "Desde su aparición, las aplicaciones han evolucionado significativamente. Inicialmente, eran simples herramientas de comunicación y entretenimiento, pero con el tiempo se han convertido en plataformas complejas que pueden manejar diversas tareas, desde compras en línea hasta gestión de negocios. La creciente adopción de smartphones ha impulsado aún más su popularidad, haciendo de las aplicaciones una parte integral del ecosistema digital."
         ],
         // finalDesc: "In essence, the technology behind asset tokenization is not just about digitizing assets; it's about creating a new paradigm for asset ownership and investment. With blockchain technology, smart contracts, and security tokens, the tokenization of real-world assets is set to redefine the investment landscape, making it more accessible, transparent, and efficient."
       },
@@ -101,7 +101,7 @@ export const es = {
           },
           {
             title: "Mayor visibilidad y alcance:",
-            desc: "Las aplicaciones móviles pueden aumentar significativamente la visibilidad y el alcance de una empresa. A través de estrategias de optimización de la tienda de aplicaciones y marketing digital, las empresas pueden atraer a nuevos usuarios y expandir su base de clientes.",
+            desc: "Las aplicaciones pueden aumentar significativamente la visibilidad y el alcance de una empresa. A través de estrategias de optimización de la tienda de aplicaciones y marketing digital, las empresas pueden atraer a nuevos usuarios y expandir su base de clientes.",
           },
           {
             title: "Innovación y adaptabilidad:",
