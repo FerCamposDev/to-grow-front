@@ -1,7 +1,7 @@
 import { use } from "react";
 import Button from "../../shared/Button";
 import SectionTitle from "../../shared/SectionTitle"
-import PostCard from "./PostCard";
+import PostCard from "../../shared/PostCard";
 import { getPosts } from "@/helpers/posts";
 import { LangProps } from "@/types/lang";
 import { dictionary } from "@/i18n";

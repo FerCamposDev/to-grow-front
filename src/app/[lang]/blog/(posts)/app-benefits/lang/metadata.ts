@@ -4,7 +4,7 @@ import { CommonLangMetadata, PostLangMetadata } from "@/types/post";
 const commonMetadata: CommonLangMetadata = {
   date: new Date('2024-06-05'),
   categories: ["custom-software", "applications"],
-  image: "/img/home/2.jpg", // TODO: add image
+  image: "/img/about/1.jpg", // TODO: add image
   author: authorsList.fer,
 };
 

@@ -1,5 +1,5 @@
 import BlogHeader from "@/app/components/blog/Layouts/BlogHeader";
-import PostCard from "@/app/components/sections/Blog/PostCard";
+import PostCard from "@/app/components/shared/PostCard";
 import { getPosts } from "@/helpers/posts";
 import { LangParams } from "@/types/lang";
 import { use } from "react";
