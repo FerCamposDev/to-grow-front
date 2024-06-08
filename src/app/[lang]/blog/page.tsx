@@ -17,10 +17,10 @@ export default function Home({ params }: LangParams) {
 
         <div className="text-center text-sm md:text-lg">
           <p>
-            Aquí encontrará todo sobre desarrollo de software, exploramos las últimas tendencias en programación, compartimos consejos para optimizar el rendimiento de sus aplicaciones y lo mantendremos al día sobre las novedades en el mundo del desarrollo de software.
+            Aquí encontrará todo sobre desarrollo de software, donde exploramos las últimas tendencias en programación, compartimos consejos para optimizar el rendimiento de sus aplicaciones y lo mantendremos al día sobre las novedades en el mundo del desarrollo de software.
           </p>
           <p>
-            Actualizamos nuestro blog con nuevas publicaciones cada semana, para que siempre esté al tanto de las mejores prácticas y últimas noticias en el mundo del software.
+            Actualizamos nuestro blog con nuevas publicaciones cada semana, para que siempre esté al tanto de las mejores prácticas y de las últimas noticias en el mundo del software.
           </p>
 
           <br />
@@ -37,7 +37,7 @@ export default function Home({ params }: LangParams) {
             Nuestros Posts
           </h2>
           <p className="text-center">
-            ¡Descubra nuestras últimas publicaciones sobre desarrollo de software y mantengase informado sobre las últimas tecnologías y tendencias en el sector!
+            ¡Descubra nuestras últimas publicaciones sobre desarrollo de software y manténgase informado sobre las últimas tecnologías y tendencias en el sector!
           </p>
 
           {/* 
