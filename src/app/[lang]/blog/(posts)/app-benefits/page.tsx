@@ -42,9 +42,12 @@ const PostPage = ({ params }: LangParams) => {
   return (
     <PostPageLayout lang={lang} metadata={metadata}>
       <Title>{intro.title}</Title>
+      <br />
       <Description lineJump>
         {intro.desc}
       </Description>
+      <br />
+      <br />
 
       <Subtitle>
         {body.section1.title}
