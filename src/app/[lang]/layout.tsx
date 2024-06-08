@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
 import NavigationBar from "../components/navigation/NavigationBar";
 import Footer from "../components/footer";
 import FloatingBackToTop from "../components/shared/FloatingBackToTop";
@@ -8,7 +8,7 @@ import FloatingWhatsapp from "../components/shared/FloatingWhatsapp";
 import { LangParams, LangProps } from "@/types/lang";
 import { LANGS, dictionary } from "@/i18n";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Lato({ subsets: ["latin"], weight: '400' });
 
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
   const wordings = dictionary[params.lang || 'es'];

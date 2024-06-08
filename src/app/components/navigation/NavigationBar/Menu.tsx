@@ -27,6 +27,7 @@ const NavigationMenu = ({ lang }: LangProps) => {
         <a href={`/${lang}#about`} onClick={toggleMenu} className="hover:text-primary">{wordings.about}</a>
         <a href={`/${lang}#team`} onClick={toggleMenu} className="hover:text-primary">{wordings.team}</a>
         <a href={`/${lang}#services`} onClick={toggleMenu} className="hover:text-primary">{wordings.services}</a>
+        <a href={`/${lang}#blog`} onClick={toggleMenu} className="hover:text-primary">{wordings.blog}</a>
         <a href={`/${lang}#contact`} onClick={toggleMenu} className="hover:text-primary">{wordings.contact}</a>
       </div>
     </div>

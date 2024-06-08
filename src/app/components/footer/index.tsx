@@ -42,6 +42,7 @@ const Footer = () => {
             <div className="mt-4">
               <a href={`/${lang}/terms`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.terms}</a>
               <a href={`/${lang}/policies`} target="_blank" className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.privacy}</a>
+              <a href={`/${lang}/blog`} className="mb-2 text-gray-300 flex items-center"><i className="fas fa-angle-right text-secondary me-2"></i>{wordings.blog}</a>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
