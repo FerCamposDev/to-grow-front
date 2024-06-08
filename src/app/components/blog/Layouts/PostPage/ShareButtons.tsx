@@ -12,7 +12,7 @@ const ShareButtons = ({ lang }: LangProps) => {
   const url = encodeURI(`https://togrow.com.ar/${lang}/blog/${slug}`);
 
   return (
-    <div className='flex flex-col gap-3 max-w-64'>
+    <div className='flex flex-col gap-3 w-64'>
       <span className='font-medium text-xl'>{shareText}</span>
 
       <div className='flex justify-center items-center gap-4'>
